@@ -1,4 +1,4 @@
-,PLAYER_ID,FIRST_NAME,LAST_NAME,FULL_NAME,ACTIVE,IMAGE_URL
+,ID,FIRST_NAME,LAST_NAME,FULL_NAME,ACTIVE,IMAGE_URL
 0,76001,Abdelnaby,Alaa,Alaa Abdelnaby,False,https://cdn.nba.com/headshots/nba/latest/1040x760/76001.png
 1,76002,Abdul-Aziz,Zaid,Zaid Abdul-Aziz,False,https://cdn.nba.com/headshots/nba/latest/1040x760/76002.png
 2,76003,Abdul-Jabbar,Kareem,Kareem Abdul-Jabbar,False,https://cdn.nba.com/headshots/nba/latest/1040x760/76003.png

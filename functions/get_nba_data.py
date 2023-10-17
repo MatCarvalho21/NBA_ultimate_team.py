@@ -4,7 +4,7 @@ import pandas as pd
 def get_teams_data(csv_name:str) -> None:
     """
     """
-    columns_name = ["TEAM_ID", "ACRONYM", "NICKNAME", "FOUNDATION_YEAR", "CITY", "NAME", "STATE", "TITLES", "LOGO_URL"]
+    columns_name = ["ID", "ACRONYM", "NICKNAME", "FOUNDATION_YEAR", "CITY", "NAME", "STATE", "TITLES", "IMAGE_URL"]
 
     for list_of_each_team in teams:
         list_of_each_team.append(f"https://cdn.nba.com/logos/nba/{list_of_each_team[0]}/global/D/logo.svg")
@@ -18,7 +18,7 @@ def get_teams_data(csv_name:str) -> None:
 def get_players_data(csv_name:str) -> None:
     """
     """
-    columns_name = ["PLAYER_ID", "FIRST_NAME", "LAST_NAME", "FULL_NAME", "ACTIVE", "IMAGE_URL"]
+    columns_name = ["ID", "FIRST_NAME", "LAST_NAME", "FULL_NAME", "ACTIVE", "IMAGE_URL"]
 
     for list_of_each_player in players:
         list_of_each_player.append(f"https://cdn.nba.com/headshots/nba/latest/1040x760/{list_of_each_player[0]}.png")
