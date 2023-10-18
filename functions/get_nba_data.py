@@ -1,5 +1,6 @@
 from nba_api.stats.library.data import teams, players
 import pandas as pd
+from var_nba_2k_ratings import RATING_LIST
 
 def get_teams_data(csv_path:str) -> None:
     """
@@ -64,7 +65,39 @@ def get_players_data(csv_path:str, active_player:bool=False) -> None:
 
     return None
 
+def get_nba_players_ratings(csv_path:str) -> None:
+    """
+    This function aims to save data from the NBA2K into a CSV file.
+
+    Parameters
+    ----------
+        csv_path
+            type:str
+            description: the path for save the CSV with the name of the file
+
+    Return
+    ----------
+        None
+
+    Examples
+    ----------
+        get_nba_players_ratings("randon\path\my_file.csv")
+    """
+    list_of_data = list()
+
+    list_of_columns = list(dict(RATING_LIST[0]).keys())
+    list_of_columns = [each_column.upper() for each_column in list_of_columns]
+
+    for each_dict in RATING_LIST:
+        list_of_data.append(list(dict(each_dict).values()))
+
+    dataframe = pd.DataFrame(data=list_of_data, columns=list_of_columns)
+    dataframe.to_csv(f"{csv_path}", index=False)
+    
+    return None
+
 if __name__ == "__main__":
     get_teams_data(".\dados\\teams_data.csv")
     get_players_data(".\dados\\players_data.csv")
     get_players_data(".\dados\\active_players_data.csv", True)
+    get_nba_players_ratings(".\dados\\players_ratings.csv")
