@@ -27,5 +27,7 @@ list_of_columns = columns_02 + columns_01[1:]
 
 final_dataframe = pd.DataFrame(columns=list_of_columns, data=list_of_data)
 final_dataframe.rename(columns={"FIRST_NAME":"LAST_NAME", "LAST_NAME":"FIRST_NAME"}, inplace=True)
+final_dataframe.sort_values(inplace=True, by=["OVERALLATTRIBUTE"], ascending=False)
+final_dataframe = final_dataframe.reset_index(drop=True)
 
 final_dataframe.to_csv(f".\dados\complete_players_database.csv", index=False)
