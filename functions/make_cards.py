@@ -2,10 +2,8 @@ from PIL import Image, ImageDraw, ImageFont
 import pandas as pd 
 import numpy as np   
 
+"""
 text_color = (64, 52, 30)
-
-players_data = pd.read_csv(".\dados\complete_players_database.csv")
-
 #pega as imagens das cartas e dos jogadores
 carta = Image.open(".\design\cards_images\_80.png")
 imagem_jogador = Image.open(".\design\players_images\\1628369.png").convert("RGBA")
@@ -285,3 +283,39 @@ desenho.text((995, 1350), number_06, fill=text_color, font=fonte, stroke_width=2
 
 #salva a imagem
 carta.save("carta3.png")
+"""
+text_color = (64, 52, 30)
+
+def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
+    """
+    """
+    text_color = text_color_rgb
+    dataframe = pd.read_csv(".\dados\complete_players_database.csv")
+
+    row_list = dataframe.loc[index, :].values.flatten().tolist()
+
+    player_full_name = f"{row_list[2]} {row_list[1]}"
+    if len(player_full_name) >= 15:
+        player_full_name = row_list[1]
+
+    player_id = row_list[0]
+
+    image_card = Image.open(f".\design\cards_images\{card_version}.png")
+    image_player = Image.open(f".\design\players_images\\{player_id}.png").convert("RGBA")
+    image_league = Image.open(".\design\cards_images\logo-nba-4096.png").convert("RGBA")
+
+    #SET_CARD
+    largura_carta, altura_carta = image_card.size
+
+    #SET_PLAYER
+    image_player = image_player.resize((1000, 735))
+    player_array = np.array(image_player)
+    player_mask = (player_array[:, :, 3] > 0)
+    image_card.paste(image_player, (144, 400), Image.fromarray(player_mask))
+
+
+    image_card.save(f".\design\\test_images\card_{index}.png")
+    return None
+
+for i in range(1, 11):
+    make_cards(i, (64, 52, 30), "86_90")
