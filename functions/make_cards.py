@@ -284,6 +284,9 @@ desenho.text((995, 1350), number_06, fill=text_color, font=fonte, stroke_width=2
 #salva a imagem
 carta.save("carta3.png")
 """
+from get_nba_data import get_teams_dict
+
+teams_dict = get_teams_dict()
 text_color = (64, 52, 30)
 
 def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
@@ -329,6 +332,14 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     league_array = np.array(image_league)
     league_mask = (league_array[:, :, 3] > 0)
     image_card.paste(image_league, (584, 1450), Image.fromarray(league_mask))
+
+    #SET_TEAMS_LOGO
+    team_code = teams_dict[row_list[5]]
+    image_team = Image.open(f".\\design\\teams_images\\png\\{team_code}.png").convert("RGBA")
+    image_team = image_team.resize((110, 110))
+    team_array = np.array(image_team)
+    team_mask = (team_array[:, :, 3] > 0)
+    image_card.paste(image_team, (695, 1450), Image.fromarray(team_mask))
 
     #SET_STATS
     text_01 = "OSC"

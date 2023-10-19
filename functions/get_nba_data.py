@@ -96,8 +96,23 @@ def get_nba_players_ratings(csv_path:str) -> None:
     
     return None
 
+def get_teams_dict():
+    """
+    """
+    dataframe = pd.read_csv(".\dados\\teams_data.csv")
+
+    dict_teams = dict()
+    list_of_ids = list(dataframe["ID"])
+    list_of_names = list(dataframe["NAME"])
+
+    for each_id, each_name in zip(list_of_ids, list_of_names):
+        dict_teams[each_name] = each_id
+
+    return dict_teams
+
 if __name__ == "__main__":
     get_teams_data(".\dados\\teams_data.csv")
     get_players_data(".\dados\\players_data.csv")
     get_players_data(".\dados\\active_players_data.csv", True)
     get_nba_players_ratings(".\dados\\players_ratings.csv")
+    print(get_teams_dict)
