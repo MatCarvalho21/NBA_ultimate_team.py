@@ -356,9 +356,24 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     card_draw.text((810, 1280), text_05, fill=text_color, font=text_font, stroke_width=0)
     card_draw.text((970, 1280), text_06, fill=text_color, font=text_font, stroke_width=0)
 
+    #SET_SUBSTATS
+    text_01 = str(int(row_list[43]))
+    text_02 = str(int(row_list[44]))
+    text_03 = str(int(row_list[45]))
+    text_04 = str(int(row_list[46]))
+    text_05 = str(int(row_list[47]))
+    text_06 = str(int(row_list[48]))
+    fonte = ImageFont.truetype("arial.ttf", 75)
+    card_draw.text((220, 1350), text_01, fill=text_color, font=fonte, stroke_width=2)
+    card_draw.text((375, 1350), text_02, fill=text_color, font=fonte, stroke_width=2)
+    card_draw.text((515, 1350), text_03, fill=text_color, font=fonte, stroke_width=2)
+    card_draw.text((680, 1350), text_04, fill=text_color, font=fonte, stroke_width=2)
+    card_draw.text((840, 1350), text_05, fill=text_color, font=fonte, stroke_width=2)
+    card_draw.text((995, 1350), text_06, fill=text_color, font=fonte, stroke_width=2)
+
     image_card.save(f".\design\\test_images\card_{index}.png")
     return None
 
 if __name__ == "__main__":
-    for i in range(0, 20):
+    for i in range(0, 50):
         make_cards(i, (255, 255, 255), "81_85")

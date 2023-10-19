@@ -110,6 +110,8 @@ def get_teams_dict():
 
     return dict_teams
 
+
+
 if __name__ == "__main__":
     get_teams_data(".\dados\\teams_data.csv")
     get_players_data(".\dados\\players_data.csv")
