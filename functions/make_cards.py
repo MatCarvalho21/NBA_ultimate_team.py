@@ -295,7 +295,7 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     row_list = dataframe.loc[index, :].values.flatten().tolist()
 
     player_full_name = f"{row_list[2]} {row_list[1]}"
-    if len(player_full_name) >= 15:
+    if len(player_full_name) >= 20:
         player_full_name = row_list[1]
 
     player_id = row_list[0]
@@ -303,19 +303,51 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     image_card = Image.open(f".\design\cards_images\{card_version}.png")
     image_player = Image.open(f".\design\players_images\\{player_id}.png").convert("RGBA")
     image_league = Image.open(".\design\cards_images\logo-nba-4096.png").convert("RGBA")
+    card_draw = ImageDraw.Draw(image_card)
 
     #SET_CARD
     largura_carta, altura_carta = image_card.size
+
+    #SET_NAME
+    text_font = ImageFont.truetype("arial.ttf", 105)
+    largura_texto, altura_texto = card_draw.textsize(player_full_name, font=text_font)
+    card_draw.text(((largura_carta - largura_texto)/2, 1150), player_full_name, fill=text_color, font=text_font, stroke_width=2)
 
     #SET_PLAYER
     image_player = image_player.resize((1000, 735))
     player_array = np.array(image_player)
     player_mask = (player_array[:, :, 3] > 0)
-    image_card.paste(image_player, (144, 400), Image.fromarray(player_mask))
+    image_card.paste(image_player, (144, 410), Image.fromarray(player_mask))
 
+    #SET_OVERALL
+    player_overall = str(row_list[6] - 5)
+    text_font = ImageFont.truetype("arial.ttf", 165)
+    card_draw.text((220, 300), player_overall, fill=text_color, font=text_font, stroke_width=3)
+
+    #SET_NBA_LOGO
+    image_league = image_league.resize((120, 120))
+    league_array = np.array(image_league)
+    league_mask = (league_array[:, :, 3] > 0)
+    image_card.paste(image_league, (584, 1450), Image.fromarray(league_mask))
+
+    #SET_STATS
+    text_01 = "OSC"
+    text_02 = "ISC"
+    text_03 = "DEF"
+    text_04 = "ATH"
+    text_05 = "PLM"
+    text_06 = "REB"
+    text_font = ImageFont.truetype("arial.ttf", 65)
+    card_draw.text((190, 1280), text_01, fill=text_color, font=text_font, stroke_width=0)
+    card_draw.text((360, 1280), text_02, fill=text_color, font=text_font, stroke_width=0)
+    card_draw.text((495, 1280), text_03, fill=text_color, font=text_font, stroke_width=0)
+    card_draw.text((655, 1280), text_04, fill=text_color, font=text_font, stroke_width=0)
+    card_draw.text((810, 1280), text_05, fill=text_color, font=text_font, stroke_width=0)
+    card_draw.text((970, 1280), text_06, fill=text_color, font=text_font, stroke_width=0)
 
     image_card.save(f".\design\\test_images\card_{index}.png")
     return None
 
-for i in range(1, 11):
-    make_cards(i, (64, 52, 30), "86_90")
+if __name__ == "__main__":
+    for i in range(0, 20):
+        make_cards(i, (255, 255, 255), "81_85")
