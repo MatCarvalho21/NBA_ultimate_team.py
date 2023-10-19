@@ -375,5 +375,5 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     return None
 
 if __name__ == "__main__":
-    for i in range(0, 50):
+    for i in range(50, 100):
         make_cards(i, (255, 255, 255), "81_85")
