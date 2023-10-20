@@ -101,7 +101,7 @@ def get_nba_players_ratings(csv_path:str) -> None:
 def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
     """
     """
-    list_of_colums = ["COUNTRY", "AGE"]
+    list_of_colums = ["COUNTRY", "AGE", "YEAR_BD", "MONTH_BD", "DAY_BD"]
     list_of_data = list()
     for each_player_id in complete_dataframe["ID"]:
 
@@ -116,8 +116,6 @@ def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
         for index in range(0, len(p_tags)):
             p_tags[index] = p_tags[index].text
 
-        print(p_tags)
-
         #GET_COUNTRY
         index_country = p_tags.index("COUNTRY") + 1
         list_of_each_player.append(p_tags[index_country])
@@ -125,7 +123,21 @@ def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
         #GET_AGE
         index_age = p_tags.index("AGE") + 1
         list_of_each_player.append(p_tags[index_age][:2])
-        
+
+        #GET_BIRTHDATE
+        index_bd = p_tags.index("BIRTHDATE") + 1
+        list_of_each_player.append(p_tags[index_bd] + p_tags[index_bd + 1])
+
+        #TODO EXPERIENCE AND BIRTHDATE BAGUNÇADOS
+        #EXPERIENCE
+        index_ex = p_tags.index("EXPERIENCE") + 1
+        list_of_data = p_tags[index_ex].split(", ")
+        sublist_of_data = list_of_data[0].split(" ")
+        print(list_of_data)
+
+        print(list_of_each_player)
+
+
 
         
 
