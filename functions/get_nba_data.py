@@ -1,6 +1,8 @@
 from nba_api.stats.library.data import teams, players
 import pandas as pd
 from var_nba_2k_ratings import RATING_LIST
+from bs4 import BeautifulSoup
+import requests
 
 def get_teams_data(csv_path:str) -> None:
     """
@@ -96,6 +98,38 @@ def get_nba_players_ratings(csv_path:str) -> None:
     
     return None
 
+def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
+    """
+    """
+    list_of_colums = ["COUNTRY", "AGE"]
+    list_of_data = list()
+    for each_player_id in complete_dataframe["ID"]:
+
+        list_of_each_player = list()
+
+        player_url = f"https://www.nba.com/player/{each_player_id}"
+
+        response = requests.get(player_url)
+        soup = BeautifulSoup(response.text, "html.parser")
+        p_tags = soup.find_all('p')
+
+        for index in range(0, len(p_tags)):
+            p_tags[index] = p_tags[index].text
+
+        print(p_tags)
+
+        #GET_COUNTRY
+        index_country = p_tags.index("COUNTRY") + 1
+        list_of_each_player.append(p_tags[index_country])
+
+        #GET_AGE
+        index_age = p_tags.index("AGE") + 1
+        list_of_each_player.append(p_tags[index_age][:2])
+        
+
+        
+
+
 def get_teams_dict():
     """
     """
@@ -113,8 +147,12 @@ def get_teams_dict():
 
 
 if __name__ == "__main__":
+    """
     get_teams_data(".\dados\\teams_data.csv")
     get_players_data(".\dados\\players_data.csv")
     get_players_data(".\dados\\active_players_data.csv", True)
     get_nba_players_ratings(".\dados\\players_ratings.csv")
     print(get_teams_dict)
+    """
+    dataframe = pd.read_csv(".\dados\complete_players_database.csv")
+    get_additional_data(dataframe)
