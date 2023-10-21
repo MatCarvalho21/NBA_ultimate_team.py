@@ -45,5 +45,5 @@ def save_images(csv_path:str, destine_path:str, extension:str) -> None:
     return None
 
 if __name__ == "__main__":
-    save_images("dados\\teams_data.csv", ".\design\teams_images", "svg")
-    save_images("dados\\active_players_data.csv", ".\design\players_images", "png")
+    # save_images("dados\\teams_data.csv", ".\design\\teams_images\svg", "svg")
+    save_images(".\dados\\final_dataframe.csv", ".\design\players_images", "png")
