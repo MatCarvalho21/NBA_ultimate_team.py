@@ -293,7 +293,8 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     """
     """
     text_color = text_color_rgb
-    dataframe = pd.read_csv(".\dados\complete_players_database.csv")
+    dataframe = pd.read_csv(".\dados\\final_dataframe.csv")
+    dataframe.fillna(0, inplace=True)
 
     row_list = dataframe.loc[index, :].values.flatten().tolist()
 
@@ -323,7 +324,7 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     image_card.paste(image_player, (144, 410), Image.fromarray(player_mask))
 
     #SET_OVERALL
-    player_overall = str(row_list[6] - 5)
+    player_overall = str(int(row_list[5] - 5))
     text_font = ImageFont.truetype("arial.ttf", 165)
     card_draw.text((220, 300), player_overall, fill=text_color, font=text_font, stroke_width=3)
 
@@ -334,7 +335,7 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     image_card.paste(image_league, (584, 1450), Image.fromarray(league_mask))
 
     #SET_TEAMS_LOGO
-    team_code = teams_dict[row_list[5]]
+    team_code = teams_dict[row_list[49]]
     image_team = Image.open(f".\\design\\teams_images\\png\\{team_code}.png").convert("RGBA")
     image_team = image_team.resize((110, 110))
     team_array = np.array(image_team)
@@ -357,12 +358,12 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     card_draw.text((970, 1280), text_06, fill=text_color, font=text_font, stroke_width=0)
 
     #SET_SUBSTATS
-    text_01 = str(int(row_list[43]))
-    text_02 = str(int(row_list[44]))
-    text_03 = str(int(row_list[45]))
-    text_04 = str(int(row_list[46]))
-    text_05 = str(int(row_list[47]))
-    text_06 = str(int(row_list[48]))
+    text_01 = str(int(row_list[42]))
+    text_02 = str(int(row_list[43]))
+    text_03 = str(int(row_list[44]))
+    text_04 = str(int(row_list[45]))
+    text_05 = str(int(row_list[46]))
+    text_06 = str(int(row_list[47]))
     fonte = ImageFont.truetype("arial.ttf", 75)
     card_draw.text((220, 1350), text_01, fill=text_color, font=fonte, stroke_width=2)
     card_draw.text((375, 1350), text_02, fill=text_color, font=fonte, stroke_width=2)
@@ -375,5 +376,5 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     return None
 
 if __name__ == "__main__":
-    for i in range(50, 100):
+    for i in range(0, 150):
         make_cards(i, (255, 255, 255), "81_85")
