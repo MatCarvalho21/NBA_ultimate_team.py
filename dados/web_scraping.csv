@@ -1,0 +1,477 @@
+,ID,TEAM,JERSEY_NUM,POSITION,COUNTRY,AGE,BD_YEAR,BD_MONTH,BD_DAY,EXPERIENCE
+0,203999,Denver Nuggets,15,Center,Serbia,28,1995,FEBRUARY,19,8
+1,203954,Philadelphia 76ers,21,Center-Forward,Cameroon,29,1994,MARCH,16,7
+2,203507,Milwaukee Bucks,34,Forward,Greece,28,1994,DECEMBER,6,10
+3,201939,Golden State Warriors,30,Guard,USA,35,1988,MARCH,14,14
+4,201142,Phoenix Suns,35,Forward,USA,35,1988,SEPTEMBER,29,15
+5,2544,Los Angeles Lakers,23,Forward,USA,38,1984,DECEMBER,30,20
+6,1629029,Dallas Mavericks,77,Forward-Guard,Slovenia,24,1999,FEBRUARY,28,5
+7,1628369,Boston Celtics,0,Forward-Guard,USA,25,1998,MARCH,3,6
+8,202710,Miami Heat,22,Forward,USA,34,1989,SEPTEMBER,14,12
+9,1626164,Phoenix Suns,1,Guard,USA,26,1996,OCTOBER,30,8
+10,203081,Milwaukee Bucks,0,Guard,USA,33,1990,JULY,15,11
+11,202695,LA Clippers,2,Forward,USA,32,1991,JUNE,29,11
+12,203076,Los Angeles Lakers,3,Forward-Center,USA,30,1993,MARCH,11,11
+13,1628983,Oklahoma City Thunder,2,Guard,Canada,25,1998,JULY,12,5
+14,1628378,Cleveland Cavaliers,45,Guard,USA,27,1996,SEPTEMBER,7,6
+15,1629630,Memphis Grizzlies,12,Guard,USA,24,1999,AUGUST,10,4
+16,1629627,New Orleans Pelicans,1,Forward,USA,23,2000,JULY,6,3
+17,202681,Dallas Mavericks,2,Guard,Australia,31,1992,MARCH,23,12
+18,1629027,Atlanta Hawks,11,Guard,USA,25,1998,SEPTEMBER,19,5
+19,1627759,Boston Celtics,7,Guard-Forward,USA,26,1996,OCTOBER,24,7
+20,201935,Philadelphia 76ers,1,Guard,USA,34,1989,AUGUST,26,14
+21,202331,LA Clippers,13,Forward,USA,33,1990,MAY,2,13
+22,1630169,Indiana Pacers,0,Guard,USA,23,2000,FEBRUARY,29,3
+23,1627750,Denver Nuggets,27,Guard,Canada,26,1997,FEBRUARY,23,6
+24,1628973,New York Knicks,11,Guard,USA,27,1996,AUGUST,31,5
+25,1630162,Minnesota Timberwolves,5,Guard,USA,22,2001,AUGUST,5,3
+26,101108,Golden State Warriors,3,Guard,USA,38,1985,MAY,6,18
+27,201950,Boston Celtics,4,Guard,USA,33,1990,JUNE,12,14
+28,1627734,Sacramento Kings,10,Forward-Center,Lithuania,27,1996,MAY,3,7
+29,1628389,,,,,,,,,
+30,1630163,Charlotte Hornets,1,Guard,USA,22,2001,AUGUST,22,3
+31,1628991,Memphis Grizzlies,13,Forward-Center,USA,24,1999,SEPTEMBER,15,5
+32,1628969,Brooklyn Nets,1,Guard-Forward,USA,27,1996,AUGUST,30,5
+33,1629636,Cleveland Cavaliers,10,Guard,USA,23,2000,JANUARY,26,4
+34,1628374,Utah Jazz,23,Forward-Center,Finland,26,1997,MAY,22,6
+35,204001,Boston Celtics,8,Forward-Center,Latvia,28,1995,AUGUST,2,7
+36,203078,Phoenix Suns,3,Guard,USA,30,1993,JUNE,28,11
+37,203897,Chicago Bulls,8,Guard,USA,28,1995,MARCH,10,9
+38,201942,Chicago Bulls,11,Guard-Forward,USA,34,1989,AUGUST,7,14
+39,1627783,Toronto Raptors,43,Forward,Cameroon,29,1994,APRIL,2,7
+40,202691,Golden State Warriors,11,Guard,USA,33,1990,FEBRUARY,8,10
+41,1626157,Minnesota Timberwolves,32,Center-Forward,USA,27,1995,NOVEMBER,15,8
+42,1630178,Philadelphia 76ers,0,Guard,USA,22,2000,NOVEMBER,4,3
+43,203944,New York Knicks,30,Forward-Center,USA,28,1994,NOVEMBER,29,9
+44,1630596,Cleveland Cavaliers,4,Center,USA,22,2001,JUNE,18,2
+45,203114,Milwaukee Bucks,22,Forward,USA,32,1991,AUGUST,12,11
+46,1627742,New Orleans Pelicans,14,Forward,USA,26,1997,SEPTEMBER,2,7
+47,1630532,Orlando Magic,22,Forward,Germany,22,2001,AUGUST,27,2
+48,202696,Chicago Bulls,9,Center,Montenegro,32,1990,OCTOBER,24,12
+49,203932,Denver Nuggets,50,Forward,USA,28,1995,SEPTEMBER,16,9
+50,1631094,Orlando Magic,5,Forward,USA,20,2002,NOVEMBER,12,1
+51,1641705,,,,France,19,2004,JANUARY,4,Rookie
+52,203497,Minnesota Timberwolves,27,Center,France,31,1992,JUNE,26,10
+53,1630217,Memphis Grizzlies,22,Guard,USA,25,1998,JUNE,25,3
+54,1630595,Detroit Pistons,2,Guard,USA,22,2001,SEPTEMBER,25,2
+55,201572,Milwaukee Bucks,11,Center,USA,35,1988,APRIL,1,15
+56,1627749,Atlanta Hawks,5,Guard,USA,27,1996,SEPTEMBER,19,6
+57,203110,Golden State Warriors,23,Forward,USA,33,1990,MARCH,4,11
+58,1627832,Houston Rockets,23,Guard,USA,29,1994,FEBRUARY,25,7
+59,1631117,Utah Jazz,24,Center,USA,22,2001,JULY,26,1
+60,1629057,Portland Trail Blazers,44,Center-Forward,USA,26,1997,OCTOBER,17,5
+61,1630224,Houston Rockets,4,Guard,USA,21,2002,FEBRUARY,9,2
+62,1628386,Cleveland Cavaliers,31,Center,USA,25,1998,APRIL,21,6
+63,1628398,Washington Wizards,33,Forward,USA,28,1995,JULY,24,6
+64,1629028,Portland Trail Blazers,22,Center,Bahamas,25,1998,JULY,23,5
+65,1629014,Portland Trail Blazers,1,Guard,USA,24,1999,JUNE,8,5
+66,1627763,Portland Trail Blazers,13,Guard,USA,30,1992,DECEMBER,11,7
+67,1629008,Denver Nuggets,1,Forward,USA,25,1998,JUNE,29,4
+68,1630578,Houston Rockets,28,Center,Turkey,21,2002,JULY,25,2
+69,1629639,Miami Heat,14,Guard,USA,23,2000,JANUARY,20,4
+70,1630581,Oklahoma City Thunder,3,Guard,Australia,21,2002,OCTOBER,10,2
+71,1626167,Indiana Pacers,33,Center-Forward,USA,27,1996,MARCH,24,8
+72,1628970,Charlotte Hornets,0,Forward,USA,25,1998,MARCH,21,4
+73,202685,New Orleans Pelicans,17,Center,Lithuania,31,1992,MAY,6,11
+74,1630567,Toronto Raptors,4,Forward,USA,22,2001,AUGUST,1,2
+75,1626171,Milwaukee Bucks,9,Forward,USA,28,1995,FEBRUARY,10,8
+76,203991,Atlanta Hawks,15,Center,Switzerland,29,1994,MAY,18,9
+77,203935,Memphis Grizzlies,36,Guard,USA,29,1994,MARCH,6,9
+78,202711,Detroit Pistons,44,Forward,Croatia,34,1989,APRIL,18,9
+79,201143,Boston Celtics,42,Center-Forward,Dominican Republic,37,1986,JUNE,3,16
+80,1628401,Boston Celtics,9,Guard,USA,29,1994,JULY,2,6
+81,1630559,Los Angeles Lakers,15,Guard,USA,25,1998,MAY,29,2
+82,1626174,Los Angeles Lakers,35,Forward,USA,28,1995,SEPTEMBER,27,7
+83,203952,Golden State Warriors,22,Forward,Canada,28,1995,FEBRUARY,23,9
+84,1629011,New York Knicks,23,Center-Forward,USA,25,1998,APRIL,1,5
+85,1630193,New York Knicks,5,Guard,USA,24,1999,JUNE,17,3
+86,1631114,Oklahoma City Thunder,8,Guard-Forward,USA,22,2001,APRIL,14,1
+87,1629673,Washington Wizards,13,Guard,USA,24,1999,JUNE,19,4
+88,1630183,Minnesota Timberwolves,3,Forward,USA,23,2000,SEPTEMBER,29,3
+89,1629645,Houston Rockets,3,Guard-Forward,USA,,2000,MAY,4,5
+90,203915,Brooklyn Nets,26,Guard,USA,30,1993,APRIL,6,9
+91,1628976,Orlando Magic,34,Center-Forward,USA,24,1999,APRIL,16,5
+92,201566,LA Clippers,0,Guard,USA,34,1988,NOVEMBER,12,15
+93,202699,Philadelphia 76ers,12,Forward,USA,31,1992,JULY,15,12
+94,1630168,Atlanta Hawks,17,Forward-Center,USA,22,2000,DECEMBER,11,3
+95,1629661,Brooklyn Nets,2,Forward,USA,27,1996,MARCH,3,4
+96,1628366,Chicago Bulls,2,Guard,USA,25,1997,OCTOBER,27,5
+97,1630170,San Antonio Spurs,24,Guard-Forward,USA,23,2000,AUGUST,23,3
+98,1627751,Toronto Raptors,19,Center,Austria,28,1995,OCTOBER,15,7
+99,203924,Portland Trail Blazers,9,Forward,USA,29,1994,MARCH,12,9
+100,203994,Phoenix Suns,27,Center,Bosnia and Herzegovina,29,1994,AUGUST,23,9
+101,203486,LA Clippers,44,Forward-Center,USA,33,1990,MARCH,5,10
+102,1629012,Utah Jazz,2,Guard,USA,24,1999,JANUARY,4,5
+103,1630175,Orlando Magic,50,Guard,USA,23,2000,MAY,15,3
+104,1631093,Detroit Pistons,23,Guard,USA,21,2002,FEBRUARY,13,1
+105,1628381,Utah Jazz,20,Forward-Center,USA,26,1997,SEPTEMBER,23,6
+106,1631099,Sacramento Kings,13,Forward,USA,23,2000,AUGUST,19,1
+107,1628989,Sacramento Kings,9,Guard-Forward,USA,25,1998,AUGUST,27,5
+108,1628370,Sacramento Kings,0,Guard,USA,25,1998,FEBRUARY,4,6
+109,1628404,New York Knicks,3,Guard,USA,28,1995,MARCH,6,6
+110,1629018,Toronto Raptors,33,Guard-Forward,USA,24,1999,JANUARY,18,5
+111,1628365,Orlando Magic,20,Guard,USA,25,1998,MAY,29,6
+112,1627741,Indiana Pacers,7,Guard,Bahamas,30,1992,DECEMBER,17,7
+113,203903,Utah Jazz,00,Guard,USA,31,1992,JUNE,7,9
+114,1626162,Philadelphia 76ers,9,Forward-Guard,USA,27,1995,DECEMBER,9,8
+115,1629640,San Antonio Spurs,3,Forward-Guard,USA,24,1999,OCTOBER,11,4
+116,1629675,Minnesota Timberwolves,11,Center-Forward,USA,24,1999,AUGUST,26,4
+117,203500,Memphis Grizzlies,4,Center,New Zealand,30,1993,JULY,20,10
+118,1627826,LA Clippers,40,Center,Croatia,26,1997,MARCH,18,7
+119,1626172,Golden State Warriors,5,Forward,USA,27,1996,FEBRUARY,6,8
+120,203084,Sacramento Kings,40,Forward,USA,31,1992,MAY,30,11
+121,1631097,Indiana Pacers,00,Guard-Forward,Canada,21,2002,JUNE,19,1
+122,1626145,Washington Wizards,5,Guard,USA,27,1996,MAY,10,8
+123,1630529,New Orleans Pelicans,5,Forward,USA,25,1998,OCTOBER,6,2
+124,1631095,Houston Rockets,1,Forward,USA,20,2003,MAY,13,1
+125,1631106,Houston Rockets,17,Forward,USA,22,2001,MAY,10,1
+126,202330,Charlotte Hornets,20,Forward,USA,33,1990,MARCH,23,13
+127,1626181,LA Clippers,24,Guard,USA,30,1993,MAY,25,8
+128,1629020,Los Angeles Lakers,2,Forward,USA,24,1999,APRIL,3,5
+129,1629060,Los Angeles Lakers,28,Forward,Japan,25,1998,FEBRUARY,8,4
+130,1629659,Utah Jazz,5,Guard,USA,22,2000,NOVEMBER,25,4
+131,1628449,Toronto Raptors,25,Forward-Center,Saint Lucia,30,1993,JANUARY,11,6
+132,203482,,,,,,,,,
+133,1628420,Detroit Pistons,5,Guard,USA,28,1995,JUNE,27,6
+134,203992,Atlanta Hawks,13,Guard,Serbia,31,1992,AUGUST,18,6
+135,201144,Minnesota Timberwolves,10,Guard,USA,36,1987,OCTOBER,11,16
+136,1628997,Miami Heat,16,Forward,USA,28,1995,SEPTEMBER,28,4
+137,1630231,LA Clippers,6,Forward,USA,22,2001,JANUARY,6,3
+138,1631105,Detroit Pistons,0,Center,USA,19,2003,NOVEMBER,18,1
+139,1630164,Detroit Pistons,13,Center,USA,22,2001,MARCH,31,2
+140,1628963,Detroit Pistons,35,Forward,USA,24,1999,MARCH,14,5
+141,1630173,Toronto Raptors,5,Forward,Nigeria,24,1999,SEPTEMBER,19,3
+142,1641706,,,,USA,20,2002,NOVEMBER,22,Rookie
+143,1630180,Atlanta Hawks,41,Forward,USA,24,1999,APRIL,9,3
+144,1629634,Memphis Grizzlies,15,Forward,Canada,27,1996,SEPTEMBER,19,4
+145,1628380,San Antonio Spurs,23,Forward-Center,USA,25,1997,NOVEMBER,19,5
+146,1630200,San Antonio Spurs,33,Guard,USA,23,2000,JANUARY,8,3
+147,1630198,,,,,,,,,
+148,1629656,New York Knicks,6,Guard,USA,23,2000,MAY,8,2
+149,1630167,Indiana Pacers,1,Forward,USA,25,1998,MARCH,4,3
+150,204456,Indiana Pacers,9,Guard,USA,31,1992,MARCH,25,8
+151,201568,Washington Wizards,88,Forward,Italy,35,1988,AUGUST,8,13
+152,203083,Chicago Bulls,3,Center,USA,30,1993,AUGUST,10,11
+153,1627936,Chicago Bulls,6,Guard,USA,29,1994,FEBRUARY,28,6
+154,1626153,Washington Wizards,55,Guard,USA,31,1992,APRIL,26,8
+155,1630557,Washington Wizards,24,Forward,USA,24,1999,MARCH,3,2
+156,1629652,Oklahoma City Thunder,5,Guard,Canada,24,1999,APRIL,19,4
+157,1628371,Orlando Magic,1,Forward,USA,26,1997,OCTOBER,3,4
+158,1630208,Charlotte Hornets,4,Center,Jamaica,25,1997,NOVEMBER,29,3
+159,203484,Denver Nuggets,5,Guard,USA,30,1993,FEBRUARY,18,10
+160,1630191,Detroit Pistons,28,Forward-Center,USA,22,2001,MAY,22,3
+161,1630703,,,,USA,19,2004,FEBRUARY,3,Rookie
+162,1631101,Portland Trail Blazers,17,Guard,Canada,20,2003,MAY,30,1
+163,1629021,Orlando Magic,21,Forward-Center,Germany,26,1997,APRIL,26,5
+164,1630228,Golden State Warriors,00,Forward,DRC,21,2002,OCTOBER,6,2
+165,1629626,Phoenix Suns,11,Center-Forward,Sudan,23,1999,NOVEMBER,16,4
+166,203501,Dallas Mavericks,11,Guard-Forward,USA,31,1992,MARCH,16,10
+167,1631110,San Antonio Spurs,10,Forward,Poland,20,2003,MAY,20,1
+168,203109,Milwaukee Bucks,99,Forward,USA,33,1990,JULY,6,11
+169,1630214,Memphis Grizzlies,2,Forward,USA,24,1999,JANUARY,12,3
+170,1628415,Houston Rockets,24,Guard-Forward,Canada,27,1996,JANUARY,22,6
+171,1627827,Brooklyn Nets,28,Forward,USA,30,1993,MAY,4,7
+172,1629611,LA Clippers,14,Guard-Forward,USA,27,1996,OCTOBER,18,4
+173,1630538,LA Clippers,5,Guard,USA,23,2000,SEPTEMBER,14,2
+174,203496,LA Clippers,23,Forward,USA,32,1990,DECEMBER,14,10
+175,1630702,Dallas Mavericks,1,Guard,USA,21,2002,JULY,5,1
+176,1630570,Brooklyn Nets,9,Forward,USA,22,2000,NOVEMBER,9,2
+177,1629003,Minnesota Timberwolves,18,Guard-Forward,USA,27,1996,SEPTEMBER,26,5
+178,1629023,Charlotte Hornets,25,Forward,USA,25,1998,AUGUST,23,4
+179,1629006,Phoenix Suns,2,Guard,Nigeria,25,1998,SEPTEMBER,1,5
+180,203937,Minnesota Timberwolves,1,Forward-Guard,USA,30,1993,SEPTEMBER,20,9
+181,1629669,Minnesota Timberwolves,4,Guard,USA,24,1999,JULY,9,5
+182,203933,Phoenix Suns,21,Forward,USA,,1993,SEPTEMBER,5,9
+183,203552,Dallas Mavericks,30,Guard,USA,33,1990,AUGUST,23,9
+184,1630534,Utah Jazz,30,Guard,USA,23,2000,APRIL,20,1
+185,1631109,Charlotte Hornets,5,Center,USA,21,2001,DECEMBER,16,1
+186,1629234,Phoenix Suns,14,Forward-Center,USA,26,1997,FEBRUARY,1,5
+187,1629655,Washington Wizards,21,Forward-Center,USA,25,1998,OCTOBER,1,4
+188,1631096,Oklahoma City Thunder,7,Center-Forward,USA,21,2002,MAY,1,Rookie
+189,1628977,Detroit Pistons,6,Guard,USA,,1998,JULY,31,6
+190,1630197,Oklahoma City Thunder,17,Forward,Serbia,21,2001,DECEMBER,26,3
+191,1629026,Oklahoma City Thunder,34,Guard-Forward,USA,28,1994,DECEMBER,2,5
+192,1627747,Cleveland Cavaliers,3,Guard,USA,29,1994,AUGUST,25,7
+193,1628978,New York Knicks,0,Guard,USA,26,1997,JANUARY,31,5
+194,1629750,Chicago Bulls,24,Guard,USA,,1993,JULY,23,5
+195,1628379,Memphis Grizzlies,10,Guard,USA,27,1996,JUNE,24,6
+196,1630583,Memphis Grizzlies,7,Forward-Center,Spain,22,2001,JANUARY,10,2
+197,1626168,Sacramento Kings,41,Forward,Canada,27,1995,NOVEMBER,5,8
+198,203210,Golden State Warriors,1,Forward-Center,USA,,1990,JUNE,21,10
+199,1629614,Indiana Pacers,2,Guard-Forward,Canada,23,2000,JANUARY,16,1
+200,202692,Detroit Pistons,14,Guard,USA,32,1991,JULY,20,12
+201,1627780,Golden State Warriors,0,Guard,USA,30,1992,DECEMBER,1,7
+202,1630172,Chicago Bulls,44,Forward,USA,22,2001,AUGUST,26,3
+203,203471,Toronto Raptors,17,Guard,Germany,30,1993,SEPTEMBER,15,10
+204,1626204,New Orleans Pelicans,22,Forward-Center,USA,30,1993,JANUARY,1,8
+205,1630631,New Orleans Pelicans,15,Guard,USA,25,1998,APRIL,12,2
+206,201567,Miami Heat,0,Forward-Center,USA,35,1988,SEPTEMBER,7,15
+207,1629667,Toronto Raptors,2,Forward-Center,USA,25,1998,JANUARY,31,4
+208,203490,Toronto Raptors,32,Forward,USA,30,1993,JUNE,3,10
+209,201152,Toronto Raptors,21,Forward,USA,35,1988,JUNE,21,16
+210,1628418,Miami Heat,13,Center-Forward,USA,26,1997,JULY,31,6
+211,201569,Phoenix Suns,23,Guard,USA,34,1988,DECEMBER,25,15
+212,1627736,Milwaukee Bucks,5,Guard,USA,26,1996,NOVEMBER,26,7
+213,1630166,Washington Wizards,8,Forward,Israel,22,2001,JANUARY,3,3
+214,203082,Phoenix Suns,8,Guard-Forward,USA,,1991,FEBRUARY,5,12
+215,1628966,Phoenix Suns,21,Forward,USA,27,1996,JANUARY,23,5
+216,1627739,Utah Jazz,11,Guard,USA,29,1994,MARCH,18,7
+217,1626149,Philadelphia 76ers,5,Forward-Center,USA,29,1994,JANUARY,26,8
+218,201976,Philadelphia 76ers,22,Guard,USA,35,1988,JULY,12,11
+219,1630194,Philadelphia 76ers,44,Forward,USA,24,1999,JUNE,14,3
+220,204060,Orlando Magic,7,Forward-Guard,Australia,36,1987,OCTOBER,2,9
+221,1630591,Orlando Magic,4,Guard,USA,22,2001,JUNE,3,2
+222,1629680,Portland Trail Blazers,4,Guard-Forward,USA,26,1997,MARCH,4,4
+223,1629056,Sacramento Kings,3,Guard,USA,,1997,MAY,16,5
+224,201580,Sacramento Kings,00,Center-Forward,USA,35,1988,JANUARY,19,15
+225,203506,Houston Rockets,3,Guard,USA,31,1992,MAY,4,10
+226,1626166,Milwaukee Bucks,15,Guard,USA,29,1994,AUGUST,8,8
+227,1628392,New York Knicks,55,Center-Forward,Germany,25,1998,MAY,5,5
+228,1629002,Phoenix Suns,4,Forward-Center,USA,26,1997,MARCH,22,5
+229,203493,Houston Rockets,25,Guard-Forward,USA,32,1991,MARCH,16,10
+230,1631103,San Antonio Spurs,22,Forward,USA,20,2003,MAY,12,1
+231,1630579,New York Knicks,45,Center,USA,25,1998,OCTOBER,20,2
+232,200768,Miami Heat,7,Guard,USA,37,1986,MARCH,25,17
+233,1629632,Chicago Bulls,0,Guard,USA,23,2000,FEBRUARY,16,4
+234,1630188,Indiana Pacers,25,Forward-Center,USA,23,2000,MARCH,16,3
+235,1641708,,,,USA,20,2003,JANUARY,30,Rookie
+236,1629684,Dallas Mavericks,3,Forward,USA,24,1998,NOVEMBER,30,4
+237,203939,Dallas Mavericks,7,Forward-Center,Canada,32,1991,JULY,20,9
+238,1630182,Dallas Mavericks,8,Guard,Australia,22,2000,NOVEMBER,16,3
+239,1631100,Atlanta Hawks,14,Forward,USA,20,2003,AUGUST,25,1
+240,1630552,Atlanta Hawks,1,Forward,USA,21,2001,DECEMBER,18,2
+241,201565,Memphis Grizzlies,4,Guard,USA,35,1988,OCTOBER,4,14
+242,203967,Golden State Warriors,20,Forward-Center,Croatia,29,1994,APRIL,8,6
+243,1629670,Indiana Pacers,13,Forward,USA,25,1998,SEPTEMBER,9,3
+244,1630174,Indiana Pacers,23,Guard-Forward,USA,24,1999,OCTOBER,16,3
+245,1630543,Indiana Pacers,22,Forward,USA,21,2002,JANUARY,10,2
+246,1627884,Dallas Mavericks,55,Forward,USA,26,1997,FEBRUARY,15,7
+247,1630171,Cleveland Cavaliers,35,Forward-Guard,USA,22,2001,JANUARY,26,3
+248,202694,LA Clippers,8,Forward,USA,34,1989,SEPTEMBER,2,12
+249,1629622,Cleveland Cavaliers,1,Guard-Forward,USA,27,1996,MARCH,28,4
+250,1641709,,,,USA,20,2003,JANUARY,30,Rookie
+251,203925,Detroit Pistons,31,Guard-Forward,USA,32,1991,SEPTEMBER,6,9
+252,1629022,Brooklyn Nets,8,Guard-Forward,USA,24,1998,DECEMBER,14,5
+253,1627732,Brooklyn Nets,10,Guard-Forward,Australia,27,1996,JULY,20,5
+254,1629647,Phoenix Suns,55,Forward,USA,23,2000,JUNE,12,5
+255,1630573,Boston Celtics,30,Forward,USA,25,1997,DECEMBER,8,2
+256,1630230,New Orleans Pelicans,8,Forward,USA,25,1998,JANUARY,24,3
+257,1630209,Utah Jazz,77,Center,Turkey,25,1998,JUNE,19,2
+258,1629642,Phoenix Suns,25,Forward-Guard,USA,23,2000,FEBRUARY,11,4
+259,1629013,Washington Wizards,20,Guard,USA,26,1997,MARCH,13,5
+260,1630625,Boston Celtics,45,Forward,Canada,23,1999,NOVEMBER,7,2
+261,203469,New Orleans Pelicans,40,Forward-Center,USA,31,1992,OCTOBER,5,10
+262,1629134,Washington Wizards,20,Guard,USA,,1995,AUGUST,3,4
+263,201145,Houston Rockets,32,Forward,USA,37,1986,AUGUST,28,15
+264,1630700,New Orleans Pelicans,11,Guard,Australia,20,2003,MARCH,17,1
+265,1629048,Orlando Magic,35,Center-Forward,Georgia,24,1999,JULY,20,4
+266,1626163,Houston Rockets,33,Forward-Center,USA,,1993,APRIL,4,9
+267,202687,Phoenix Suns,18,Center,DRC,,1992,AUGUST,28,13
+268,1630192,Denver Nuggets,22,Forward-Center,USA,22,2001,JANUARY,9,3
+269,200782,Philadelphia 76ers,17,Forward,USA,38,1985,MAY,5,12
+270,202704,Denver Nuggets,7,Guard,USA,33,1990,APRIL,16,12
+271,201933,Boston Celtics,91,Forward,USA,,1989,MARCH,16,14
+272,1628467,Dallas Mavericks,42,Forward,Germany,31,1992,JANUARY,29,6
+273,1626158,Dallas Mavericks,20,Forward,USA,30,1993,OCTOBER,15,8
+274,1629139,Phoenix Suns,18,Guard-Forward,Japan,29,1994,OCTOBER,13,5
+275,203914,Orlando Magic,14,Guard,USA,29,1994,SEPTEMBER,14,9
+276,1630526,Houston Rockets,50,Forward,USA,22,2000,NOVEMBER,3,2
+277,1627814,Phoenix Suns,10,Guard-Forward,USA,31,1992,OCTOBER,21,6
+278,1630165,Detroit Pistons,7,Guard,France,22,2001,JULY,27,3
+279,2738,Golden State Warriors,9,Guard-Forward,USA,,1984,JANUARY,28,20
+280,1628981,Atlanta Hawks,0,Forward-Center,Angola,25,1998,AUGUST,15,4
+281,1631119,Oklahoma City Thunder,6,Forward,USA,21,2002,JUNE,29,1
+282,203488,Washington Wizards,35,Forward-Center,USA,32,1991,JULY,1,10
+283,1630544,Oklahoma City Thunder,23,Guard,USA,22,2001,FEBRUARY,3,2
+284,201937,Cleveland Cavaliers,13,Guard,Spain,33,1990,OCTOBER,21,12
+285,1628464,Indiana Pacers,27,Forward-Center,Germany,31,1992,APRIL,4,6
+286,1630558,Sacramento Kings,15,Guard,USA,25,1998,SEPTEMBER,5,2
+287,1629117,Boston Celtics,35,Forward,South Sudan,26,1997,MARCH,26,4
+288,1629629,Los Angeles Lakers,5,Forward-Guard,USA,24,1999,SEPTEMBER,1,4
+289,1629216,Los Angeles Lakers,7,Guard,USA,27,1996,JUNE,14,4
+290,1629637,Los Angeles Lakers,11,Center-Forward,USA,23,2000,MAY,23,4
+291,1626224,San Antonio Spurs,16,Forward,Turkey,28,1995,APRIL,8,6
+292,1628998,Charlotte Hornets,11,Forward,USA,28,1995,SEPTEMBER,28,4
+293,1629646,San Antonio Spurs,28,Center-Forward,Nigeria,22,2000,OCTOBER,28,2
+294,1627752,Los Angeles Lakers,12,Forward,USA,29,1994,MARCH,22,7
+295,1630528,Utah Jazz,9,Guard,USA,21,2001,DECEMBER,8,2
+296,203457,,,,USA,,1994,APRIL,10,10
+297,1628960,Phoenix Suns,8,Guard,USA,28,1995,OCTOBER,8,5
+298,1626192,Milwaukee Bucks,24,Guard,USA,30,1993,JANUARY,6,8
+299,1630537,Sacramento Kings,3,Guard,Dominican Republic,26,1997,JUNE,13,2
+300,1626196,Miami Heat,0,Guard,USA,30,1993,SEPTEMBER,15,8
+301,1628470,Chicago Bulls,13,Forward,USA,32,1990,DECEMBER,19,6
+302,1629660,Cleveland Cavaliers,2,Guard-Forward,USA,26,1997,JULY,8,4
+303,1628975,Chicago Bulls,5,Guard,USA,28,1995,SEPTEMBER,14,5
+304,203920,San Antonio Spurs,24,Center,Canada,31,1992,SEPTEMBER,28,7
+305,202709,Golden State Warriors,1,Guard,Canada,32,1991,AUGUST,20,12
+306,1630647,Washington Wizards,97,Forward,Nigeria,26,1997,FEBRUARY,14,2
+307,1630587,Detroit Pistons,12,Forward,USA,25,1998,JULY,28,2
+308,201988,Atlanta Hawks,8,Guard,Australia,35,1988,AUGUST,11,14
+309,1630692,Phoenix Suns,0,Guard,USA,24,1998,OCTOBER,23,2
+310,201587,LA Clippers,33,Guard-Forward,France,34,1988,DECEMBER,14,15
+311,1629643,Orlando Magic,3,Forward,USA,25,1998,AUGUST,18,3
+312,1630177,Charlotte Hornets,9,Guard,France,22,2001,JUNE,12,3
+313,1628372,Brooklyn Nets,4,Guard,USA,25,1997,NOVEMBER,25,6
+314,1631107,Miami Heat,5,Forward,Serbia,20,2003,JUNE,9,1
+315,202693,Dallas Mavericks,88,Forward,USA,34,1989,SEPTEMBER,2,12
+316,1629130,Miami Heat,55,Forward,USA,29,1994,APRIL,22,5
+317,1631323,Utah Jazz,16,Forward,Italy,27,1995,DECEMBER,9,1
+318,203115,Toronto Raptors,1,Guard,USA,,1991,JANUARY,6,12
+319,203473,Philadelphia 76ers,14,Center,USA,,1989,AUGUST,12,11
+320,1630598,Oklahoma City Thunder,21,Guard,USA,24,1999,JANUARY,2,2
+321,1630322,Oklahoma City Thunder,12,Forward,USA,26,1997,JULY,28,2
+322,201577,Milwaukee Bucks,33,Center,USA,35,1988,APRIL,1,15
+323,1630527,LA Clippers,4,Guard,USA,21,2001,NOVEMBER,28,2
+324,203085,Minnesota Timberwolves,25,Guard,USA,,1992,AUGUST,1,12
+325,1630245,Chicago Bulls,12,Guard,USA,23,2000,JANUARY,17,2
+326,1629676,New York Knicks,18,Forward,USA,25,1998,FEBRUARY,3,5
+327,203095,,,,,,,,,
+328,1628436,Boston Celtics,40,Center-Forward,USA,28,1995,JULY,15,6
+329,203458,Sacramento Kings,25,Center,Ukraine,30,1993,JUNE,16,10
+330,203526,Cleveland Cavaliers,19,Guard,Brazil,,1992,MAY,19,9
+331,1626159,Toronto Raptors,26,Forward-Guard,USA,27,1996,MARCH,26,8
+332,1629111,Houston Rockets,11,Center,Australia,27,1995,OCTOBER,25,2
+333,1641715,,,,USA,19,2004,JULY,8,Rookie
+334,1630678,Chicago Bulls,32,Forward,USA,24,1999,SEPTEMBER,23,2
+335,1629638,Minnesota Timberwolves,9,Guard,Canada,25,1998,SEPTEMBER,2,4
+336,1631132,Toronto Raptors,35,Center,Cameroon,23,2000,JUNE,20,1
+337,1628427,Denver Nuggets,31,Forward,Slovenia,26,1997,APRIL,10,4
+338,202397,Denver Nuggets,14,Guard,USA,,1988,JULY,5,14
+339,1627777,Cleveland Cavaliers,20,Forward,USA,30,1993,JUNE,17,7
+340,1641707,Utah Jazz,0,Forward,USA,19,2003,NOVEMBER,22,Rookie
+341,1629731,Cleveland Cavaliers,32,Forward-Center,USA,26,1996,NOVEMBER,20,4
+342,1631128,Denver Nuggets,0,Guard,USA,22,2001,APRIL,17,1
+343,203926,,,,,,,,,
+344,1629052,Boston Celtics,12,Forward-Guard,Canada,25,1998,JUNE,20,4
+345,1627745,Cleveland Cavaliers,30,Center,USA,28,1995,JUNE,30,7
+346,1631104,San Antonio Spurs,14,Guard,USA,20,2003,MARCH,16,1
+347,203476,San Antonio Spurs,41,Center,Senegal,,1990,JANUARY,18,11
+348,1629641,San Antonio Spurs,35,Guard-Forward,USA,23,1999,OCTOBER,25,5
+349,1630572,San Antonio Spurs,54,Forward-Center,Georgia,24,1999,MAY,23,2
+350,1630240,Phoenix Suns,38,Guard,USA,24,1999,JUNE,23,3
+351,1630202,Boston Celtics,11,Guard,USA,25,1998,JANUARY,28,3
+352,1631207,Chicago Bulls,25,Forward,USA,21,2002,JULY,12,1
+353,1629650,Portland Trail Blazers,0,Center,USA,24,1999,OCTOBER,13,4
+354,1630688,Phoenix Suns,12,Forward,USA,,1994,SEPTEMBER,12,3
+355,203200,Denver Nuggets,9,Forward-Guard,USA,34,1989,APRIL,5,10
+356,1630201,Toronto Raptors,22,Guard,USA,25,1998,MAY,9,3
+357,201959,Washington Wizards,67,Forward,USA,38,1985,JUNE,24,14
+358,1631223,Memphis Grizzlies,27,Forward,USA,22,2001,MARCH,27,1
+359,1630233,Minnesota Timberwolves,13,Forward-Center,USA,26,1997,SEPTEMBER,20,4
+360,1630613,New York Knicks,4,Guard,Germany,23,2000,MARCH,24,2
+361,1626161,Houston Rockets,00,Center,USA,,1993,AUGUST,18,8
+362,1630540,New York Knicks,2,Guard,USA,23,2000,SEPTEMBER,8,2
+363,1630215,Washington Wizards,14,Guard,USA,23,2000,AUGUST,25,2
+364,1628988,Houston Rockets,3,Guard,USA,27,1996,SEPTEMBER,30,5
+365,1626246,Houston Rockets,51,Center,Serbia,35,1988,AUGUST,15,8
+366,1630541,Golden State Warriors,4,Guard,USA,21,2002,MAY,31,2
+367,202722,Oklahoma City Thunder,9,Forward,Latvia,30,1992,NOVEMBER,12,7
+368,1631172,Oklahoma City Thunder,13,Forward,France,20,2003,MAY,21,1
+369,201588,Indiana Pacers,7,Guard,USA,,1986,MAY,4,16
+370,1630237,Golden State Warriors,40,Forward,USA,,1998,JANUARY,20,4
+371,1629726,Atlanta Hawks,25,Guard,USA,26,1996,OCTOBER,24,4
+372,203585,Golden State Warriors,19,Guard,USA,32,1991,JULY,29,7
+373,202684,Cleveland Cavaliers,12,Center-Forward,Canada,32,1991,MARCH,13,12
+374,1630184,New Orleans Pelicans,13,Guard,USA,22,2001,APRIL,6,3
+375,201609,Milwaukee Bucks,31,Guard,Slovenia,,1986,MAY,6,16
+376,1630568,Minnesota Timberwolves,55,Center,USA,24,1998,DECEMBER,27,2
+377,1629162,Minnesota Timberwolves,6,Guard,USA,27,1996,APRIL,9,4
+378,1628972,Minnesota Timberwolves,7,Guard-Forward,USA,24,1999,JULY,28,5
+379,1627863,Philadelphia 76ers,25,Forward-Guard,USA,30,1993,JUNE,7,7
+380,201980,Philadelphia 76ers,14,Guard,USA,36,1987,JUNE,22,14
+381,1628373,Charlotte Hornets,21,Guard,France,25,1998,JULY,28,6
+382,203648,Milwaukee Bucks,43,Forward,Greece,31,1992,JULY,18,5
+383,1630699,Milwaukee Bucks,0,Forward,USA,23,2000,OCTOBER,12,1
+384,1629599,LA Clippers,7,Guard-Forward,USA,26,1997,JUNE,17,4
+385,203086,Milwaukee Bucks,3,Forward-Center,USA,,1992,FEBRUARY,27,11
+386,1630264,Washington Wizards,16,Forward,USA,31,1992,OCTOBER,17,3
+387,1629308,Utah Jazz,95,Forward,USA,,1993,APRIL,10,5
+388,1630219,Portland Trail Blazers,4,Guard,USA,26,1997,SEPTEMBER,5,3
+389,1631222,Memphis Grizzlies,3,Forward,USA,21,2001,NOVEMBER,3,1
+390,1641718,Utah Jazz,3,Guard,USA,19,2003,NOVEMBER,8,Rookie
+391,201599,Denver Nuggets,6,Center,USA,35,1988,JULY,21,15
+392,1630533,Memphis Grizzlies,8,Forward,USA,22,2001,SEPTEMBER,12,2
+393,1629723,Memphis Grizzlies,46,Guard,USA,27,1996,MARCH,22,4
+394,1631254,Memphis Grizzlies,6,Forward,USA,21,2002,AUGUST,14,1
+395,1631115,Miami Heat,25,Center,USA,23,2000,JULY,10,1
+396,202083,Atlanta Hawks,23,Guard,USA,37,1986,OCTOBER,14,14
+397,1630561,Philadelphia 76ers,28,Guard,USA,24,1999,OCTOBER,13,2
+398,1630539,Charlotte Hornets,23,Center-Forward,Bahamas,,2001,JANUARY,19,3
+399,1631121,Charlotte Hornets,7,Guard,USA,20,2002,NOVEMBER,8,1
+400,1628962,Phoenix Suns,20,Center-Forward,Nigeria,24,1999,SEPTEMBER,17,3
+401,ID,,,,,,,,,
+402,1630547,Charlotte Hornets,2,Guard,USA,23,2000,SEPTEMBER,18,2
+403,1629717,Brooklyn Nets,13,Guard,USA,25,1998,JUNE,5,2
+404,1631108,Los Angeles Lakers,10,Guard,USA,20,2003,FEBRUARY,10,1
+405,1641645,Washington Wizards,12,Forward,Australia,28,1995,AUGUST,19,1
+406,1631111,Minnesota Timberwolves,7,Guard,USA,22,2001,SEPTEMBER,18,1
+407,1630554,LA Clippers,17,Guard,USA,,1999,AUGUST,10,2
+408,1631133,Portland Trail Blazers,34,Forward,USA,21,2002,JULY,30,1
+409,1631212,Denver Nuggets,8,Guard,USA,21,2002,SEPTEMBER,11,1
+410,1629677,Utah Jazz,19,Forward,Croatia,23,2000,JANUARY,9,3
+411,203957,Utah Jazz,0,Guard,Australia,28,1995,JULY,13,6
+412,1630235,Atlanta Hawks,2,Guard,USA,25,1998,JUNE,12,3
+413,1631216,Orlando Magic,2,Guard,Canada,20,2003,JANUARY,9,1
+414,203487,Orlando Magic,11,Guard,USA,,1991,OCTOBER,10,10
+415,1630241,Cleveland Cavaliers,5,Guard,USA,27,1996,MAY,15,3
+416,1629685,New York Knicks,20,Guard-Forward,USA,27,1996,SEPTEMBER,22,3
+417,1630553,Phoenix Suns,6,Guard,USA,21,2002,MARCH,10,2
+418,1627788,Philadelphia 76ers,30,Guard-Forward,Turkey,26,1997,JULY,24,6
+419,201949,Indiana Pacers,16,Forward,USA,,1987,FEBRUARY,20,15
+420,1630556,Sacramento Kings,17,Forward,USA,23,2000,AUGUST,9,2
+421,1630346,Minnesota Timberwolves,37,Forward,USA,26,1997,APRIL,17,2
+422,1630531,Philadelphia 76ers,11,Guard,USA,21,2002,SEPTEMBER,25,2
+423,201571,Houston Rockets,4,Guard,USA,,1987,NOVEMBER,10,15
+424,1631288,Miami Heat,8,Forward,USA,24,1999,MARCH,20,1
+425,1630225,Washington Wizards,14,Forward,USA,,2001,OCTOBER,17,3
+426,1629674,Boston Celtics,88,Center,Portugal,24,1999,JULY,13,2
+427,1629623,Milwaukee Bucks,28,Guard,Canada,25,1998,MARCH,28,2
+428,1629678,Orlando Magic,25,Forward,United Kingdom,26,1997,MARCH,30,3
+429,2617,Miami Heat,40,Forward,USA,,1980,JUNE,9,21
+430,1630604,New Orleans Pelicans,32,Forward,USA,22,2000,DECEMBER,18,Rookie
+431,1631169,Minnesota Timberwolves,8,Forward,USA,20,2002,NOVEMBER,25,1
+432,202066,Toronto Raptors,14,Guard-Forward,USA,37,1986,MAY,8,13
+433,1630600,Cleveland Cavaliers,15,Forward,USA,24,1999,SEPTEMBER,24,1
+434,1629312,Miami Heat,24,Forward,USA,26,1996,DECEMBER,9,3
+435,1629662,Boston Celtics,28,Center,Canada,,1997,AUGUST,14,4
+436,1629610,New York Knicks,8,Guard-Forward,USA,26,1997,AUGUST,30,4
+437,1630551,Miami Heat,99,Guard-Forward,USA,22,2001,JUNE,29,2
+438,1631120,Boston Celtics,20,Guard,USA,21,2002,OCTOBER,3,1
+439,1631367,,,,USA,25,1998,JULY,14,1
+440,1631217,LA Clippers,25,Forward,France,21,2002,JANUARY,21,1
+441,1631112,Indiana Pacers,10,Guard,USA,20,2003,MAY,11,1
+442,1631197,Detroit Pistons,8,Guard,USA,24,1999,AUGUST,27,1
+443,1630284,Orlando Magic,8,Guard,USA,26,1997,JUNE,24,1
+444,1631303,,,,USA,24,1999,MARCH,26,1
+445,1629603,New York Knicks,21,Forward,Guinea,26,1997,JANUARY,21,3
+446,1630644,Orlando Magic,10,Guard,USA,24,1999,JANUARY,6,2
+447,1631246,Memphis Grizzlies,5,Guard,USA,23,2000,AUGUST,30,1
+448,1631199,Toronto Raptors,8,Forward,USA,23,2000,APRIL,12,1
+449,1631221,Denver Nuggets,21,Guard,USA,24,1999,JUNE,25,Rookie
+450,1630590,Los Angeles Lakers,14,Guard,USA,22,2000,NOVEMBER,10,2
+451,1631309,Houston Rockets,12,Guard,USA,24,1999,MARCH,23,1
+452,1631205,Detroit Pistons,27,Forward,USA,23,1999,NOVEMBER,11,1
+453,1630577,San Antonio Spurs,30,Forward,USA,22,2001,JUNE,29,1
+454,1630548,Utah Jazz,33,Guard,USA,22,2001,MARCH,17,1
+455,1631157,Washington Wizards,9,Guard,USA,21,2002,JULY,3,1
+456,1630593,Dallas Mavericks,23,Guard,USA,,1998,OCTOBER,25,3
+457,1628435,,,,USA,,1996,APRIL,14,2
+458,1631165,Sacramento Kings,23,Guard,USA,23,2000,JANUARY,8,1
+459,1631230,San Antonio Spurs,26,Forward,USA,20,2003,MAY,26,1
+460,1630639,Dallas Mavericks,9,Guard,Canada,23,2000,JULY,15,1
+461,1630637,,,,,,,,,
+462,1631123,,,,USA,,1999,JUNE,27,2
+463,1630696,Miami Heat,9,Guard,USA,25,1997,DECEMBER,30,1
+464,1630206,Boston Celtics,55,Guard,USA,23,2000,SEPTEMBER,1,3
+465,1629875,LA Clippers,15,Guard,USA,28,1995,JANUARY,2,2
+466,1628221,Indiana Pacers,32,Guard,USA,,1993,AUGUST,2,3
+467,1630620,Houston Rockets,5,Forward,USA,24,1999,OCTOBER,20,1
+468,1631220,New Orleans Pelicans,0,Guard,USA,23,2000,MAY,26,1
+469,1630695,Utah Jazz,25,Center,USA,25,1998,APRIL,6,2
+470,1631171,Chicago Bulls,34,Forward,USA,21,2002,APRIL,12,Rookie
+471,1631298,Oklahoma City Thunder,10,Forward,Australia,26,1997,AUGUST,5,1
+472,1630846,Oklahoma City Thunder,30,Center,France,24,1999,FEBRUARY,20,2
+473,1630641,Portland Trail Blazers,41,Center,Senegal,21,2002,OCTOBER,13,Rookie
+474,1630643,Denver Nuggets,34,Center,USA,26,1997,AUGUST,25,2
+475,1630296,Denver Nuggets,11,Forward,USA,26,1997,FEBRUARY,14,2
