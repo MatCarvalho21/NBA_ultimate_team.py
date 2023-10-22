@@ -1,49 +1,51 @@
 import requests
 import pandas as pd 
 
-def save_images(csv_path:str, destine_path:str, extension:str) -> None:
+def save_images(csv_path:str, path_for_save_images:str, extension:str, to_save:bool=True) -> None:
     """
-    This function will receive the path to a CSV file (containing data about NBA teams or players), 
-    a path to a folder (where the images will be saved), and the extension in which the images will 
-    be saved. Its goal is to collect the images corresponding to the links and download them.
-
-    Parameters
-    ----------
-        csv_path
-            type:str
-            description: relative path to the CSV file
-        
-        destine_path
-            type:str
-            description: relative path to the destine folder
-
-        extension
-            type:str
-            description: file extension for save
-
-    Return
-    ----------
-        None
-
-    Examples
-    ----------
-        save_images("path\\for_my.csv", "path\\for_my_folder", "csv")
+    Essa função recebe um dataframe, ou de jogadores ou de times, desde que contenha a coluna 
+    ID e a coluna IMAGE_URL e baixa as imagens de acordo com esses dados. 
     """
 
     dataframe = pd.read_csv(f".\{csv_path}")
     list_of_urls = list(dataframe["IMAGE_URL"])
     list_of_ids = list(dataframe["ID"])
 
-    for each_id, each_url in zip(list_of_ids, list_of_urls):
-        response = requests.get(each_url)
+    if to_save == True:
+        for each_id, each_url in zip(list_of_ids, list_of_urls):
+            response = requests.get(each_url)
 
-        if response.status_code == 200:
-            with open(f"{destine_path}\{each_id}.{extension}", "wb") as file:
-                file.write(response.content)
-            print(f'{each_id} pronto.')
+            if response.status_code == 200:
+                with open(f"{path_for_save_images}\{each_id}.{extension}", "wb") as file:
+                    file.write(response.content)
+                print(f'{each_id} pronto.')
+
+    return None
+
+def save_flags(csv_path:str, path_for_save_images:str, extension:str, to_save:bool=True) -> None:
+    """
+    Recebe um dataframe que tem uma coluna com as siglas no formato iso 3166 dos países e
+    salva em uma pasta desejada as bandeiras dos países contidos no dataframe.
+    """
+
+    dataframe = pd.read_csv(f".\{csv_path}")
+    set_of_countries = set(dataframe["CORRECT_COUNTRY"])
+
+    if to_save == True:
+        for each_country in set_of_countries:
+            url = f"https://raw.githubusercontent.com/hampusborgos/country-flags/main/png1000px/{each_country.lower()}.png"
+            response = requests.get(url)
+
+            if response.status_code == 200:
+                with open(f"{path_for_save_images}\{each_country}.{extension}", "wb") as file:
+                    file.write(response.content)
+                print(f'{each_country} pronto.')
 
     return None
 
 if __name__ == "__main__":
-    save_images("dados\\teams_data.csv", ".\design\teams_images", "svg")
-    save_images("dados\\active_players_data.csv", ".\design\players_images", "png")
+    #OK 2023_10_21
+    save_images(".\\dados\\final_dataframe.csv", ".\\design\\players_images", "png", False)
+
+    #OK 2023_10_21
+    save_flags(".\\dados\\final_dataframe.csv", ".\\design\\flags_images", "png", to_save=False)
