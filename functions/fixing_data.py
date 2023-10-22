@@ -1,7 +1,4 @@
 import pandas as pd  
-
-list_of_columns = ["ID","TEAM","JERSEY_NUM","POSITION","COUNTRY","AGE","BD_YEAR","BD_MONTH","BD_DAY","EXPERIENCE"]
-dataframe = pd.read_csv("./dados\web_scraping.csv")
 dict_correct = {29: ["1628389", "Miami Heat", "13", "Center-Forward", "EUA", "26", "1997", "JULY", "18", "6"], #BAM ADEBAYO
                 51: ["1641705", "San Antonio Spurs", "1", "Forward-Center", "France", "19", "2004", "JANUARY", "4", "Rookie"], #VICTOR WEMBANYAMA
                 132: ["203482", "Utah Jazz", "41", "Forward-Center", "Canada", "32", "1991", "APRIL", "19", "10"], #KELLY OLYNYK
@@ -21,9 +18,26 @@ dict_correct = {29: ["1628389", "Miami Heat", "13", "Center-Forward", "EUA", "26
                 461: ["1630637", "Chicago Bulls", "22", "Guard", "USA", "25", "1997", "DECEMBER", "23", "2"], #CARLIK JONES
                 462: [None, None, None, None, None, None, None, None, None, None]} #NONE_PLAYER 
 
-for each_index in dict_correct.keys():
-    dict_correct[each_index].insert(0, each_index)
-    dataframe.loc[each_index] = dict_correct[each_index]
+def fixing_data(csv_path:str, path_for_save:str, to_save:bool) -> pd.DataFrame:
+    """
+    Essa função tem como objetivo corrigir os erros gerados pelo webscraping. Alguns jogaores ficaram
+    sem dados, esse é o preço por automatizar processos. Como são poucos, resolvi fazer na mão os dados 
+    e gerar a função que resove.
+    """
 
-dataframe.reset_index(drop=True, inplace=True)
-dataframe.to_csv("./dados\web_scraping.csv", index=False)
+    dataframe = pd.read_csv(f"{csv_path}")
+
+    for each_index in dict_correct.keys():
+        dict_correct[each_index].insert(0, each_index)
+        dataframe.loc[each_index] = dict_correct[each_index]
+    
+    dataframe.reset_index(drop=True, inplace=True)
+
+    if to_save == True:
+        dataframe.to_csv("./dados\web_scraping.csv", index=False)
+    
+    return dataframe
+
+if __name__ == "__main__":
+    #OK 2023_10_21
+    fixing_data(".\dados\web_scraping.csv", "", False)

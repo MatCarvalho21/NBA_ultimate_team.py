@@ -6,9 +6,13 @@ from get_nba_data import get_teams_dict
 teams_dict = get_teams_dict()
 text_color = (64, 52, 30)
 
-def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
+def make_cards(index:int, text_color_rgb:tuple, card_version:str, path_for_save:str) -> None:
     """
+    Essa função vai gerar e salvar a carta de um jogador com base no seu ID. Ela recebe, além do ID, 
+    a cor do texto da carta no formato RGB, a versão da carta, apenas o nome sem a extensão, e o path
+    de onde a carta deve ser salva.
     """
+    
     text_color = text_color_rgb
     dataframe = pd.read_csv(".\dados\\final_dataframe.csv")
     dataframe.fillna(0, inplace=True)
@@ -23,7 +27,7 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
 
     image_card = Image.open(f".\design\cards_images\{card_version}.png")
     image_player = Image.open(f".\design\players_images\\{player_id}.png").convert("RGBA")
-    image_league = Image.open(".\design\cards_images\logo-nba-4096.png").convert("RGBA")
+    image_league = Image.open(".\design\cards_images\league_logo.png").convert("RGBA")
     card_draw = ImageDraw.Draw(image_card)
 
     #SET_CARD
@@ -89,9 +93,9 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str) -> None:
     card_draw.text((840, 1350), text_05, fill=text_color, font=fonte, stroke_width=2)
     card_draw.text((995, 1350), text_06, fill=text_color, font=fonte, stroke_width=2)
 
-    image_card.save(f".\design\\test_images\card_{index}.png")
+    image_card.save(f"{path_for_save}\{player_id}_{card_version}.png")
     return None
 
 if __name__ == "__main__":
     for i in range(463, 477):
-        make_cards(i, (255, 255, 255), "81_85")
+        make_cards(i, (255, 255, 255), "card_gold")

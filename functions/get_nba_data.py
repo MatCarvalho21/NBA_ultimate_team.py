@@ -4,24 +4,11 @@ from var_nba_2k_ratings import RATING_LIST
 from bs4 import BeautifulSoup
 import requests
 
-def get_teams_data(csv_path:str) -> None:
+def get_teams_data(to_save:bool=False, path_for_save:str="", csv_name:str="") -> pd.DataFrame:
     """
-    This function aims to save data from the NBA_API library related to NBA teams 
-    into a CSV file.
-
-    Parameters
-    ----------
-        csv_path
-            type:str
-            description: the path for save the CSV with the name of the file
-
-    Return
-    ----------
-        None
-
-    Examples
-    ----------
-        get_teams_data("randon\path\my_file.csv")
+    Essa função vai pegar os dados da biblioteca NBA API refente aos times da NBA e gerar um datafame
+    com eles. Além disso, vai criar uma coluna com o link do logo de cada equipe que será baixado 
+    por outra função. 
     """
     columns_name_teams = ["ID", "ACRONYM", "NICKNAME", "FOUNDATION_YEAR", "CITY", "NAME", "STATE", "TITLES", "IMAGE_URL"]
 
@@ -29,29 +16,16 @@ def get_teams_data(csv_path:str) -> None:
         list_of_each_team.append(f"https://cdn.nba.com/logos/nba/{list_of_each_team[0]}/global/D/logo.svg")
 
     dataframe = pd.DataFrame(data=teams, columns=columns_name_teams)
+    if to_save == True:
+        dataframe.to_csv(f"{path_for_save}\{csv_name}", index=False)
 
-    dataframe.to_csv(f"{csv_path}", index=False)
+    return dataframe
 
-    return None
-
-def get_players_data(csv_path:str, active_player:bool=False) -> None:
+def get_players_data(to_save:bool=False, path_for_save:str="", csv_name:str="", active_player:bool=False) -> pd.DataFrame:
     """
-    This function aims to save data from the NBA_API library related to NBA players, 
-    both retired and current, into a CSV file.
-
-    Parameters
-    ----------
-        csv_path
-            type:str
-            description: the path for save the CSV with the name of the file
-
-    Return
-    ----------
-        None
-
-    Examples
-    ----------
-        get_players_data("randon\path\my_file.csv", True)
+    Essa função vai gerar um dataframe com os dados que foram extraidos da biblioteca 
+    NBA API, além de criar o link para a imagem de cada jogador que vai ser usado por
+    outra função para salvar.
     """
     columns_name_players = ["ID", "FIRST_NAME", "LAST_NAME", "FULL_NAME", "ACTIVE", "IMAGE_URL"]
 
@@ -63,27 +37,15 @@ def get_players_data(csv_path:str, active_player:bool=False) -> None:
     if active_player == True:
         dataframe = dataframe[dataframe["ACTIVE"] == True].reset_index(drop=True)
 
-    dataframe.to_csv(f"{csv_path}", index=False)
+    if to_save == True:
+        dataframe.to_csv(f"{path_for_save}\{csv_name}", index=False)
 
-    return None
+    return dataframe
 
-def get_nba_players_ratings(csv_path:str) -> None:
+def get_nba_players_ratings(to_save:bool=False, path_for_save:str="", csv_name:str="") -> pd.DataFrame:
     """
-    This function aims to save data from the NBA2K into a CSV file.
-
-    Parameters
-    ----------
-        csv_path
-            type:str
-            description: the path for save the CSV with the name of the file
-
-    Return
-    ----------
-        None
-
-    Examples
-    ----------
-        get_nba_players_ratings("randon\path\my_file.csv")
+    Essa função vai gerar um dataframe com os dados dos jogadores referentes ao NBA2K. Os dados 
+    estão em uma lista de dicionários presentes em outro arquivo, ela apenas gera um dataframe com esses dados.
     """
     list_of_data = list()
 
@@ -93,16 +55,24 @@ def get_nba_players_ratings(csv_path:str) -> None:
     for each_dict in RATING_LIST:
         list_of_data.append(list(dict(each_dict).values()))
 
-    dataframe = pd.DataFrame(data=list_of_data, columns=list_of_columns)
-    dataframe.to_csv(f"{csv_path}", index=False)
+    dataframe = pd.DataFrame(data=list_of_data, columns=list_of_columns).reset_index(drop=True)
     
-    return None
+    if to_save == True:
+        dataframe.to_csv(f"{path_for_save}\{csv_name}", index=False)
+    
+    return dataframe
 
-def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
+def web_scraping_nba(path_for_id_dataframe:str, to_save:bool=False, path_for_save:str="", final_csv_name:str="") -> pd.DataFrame:
     """
+    Essa função recebe um dataframe que deve conter os ID dos jogadores e faz um websacraping da página de cada um
+    no site da NBA. Além disso, ela retorna um dataframe com os dados que foram coletados. Também é possível passar
+    parâmetros opicionais para salvar um csv com os dados obtidos. 
     """
+    complete_dataframe = pd.read_csv(f"{path_for_id_dataframe}")
+
     list_of_colums = ["ID", "TEAM", "JERSEY_NUM", "POSITION", "COUNTRY", "AGE", "BD_YEAR", "BD_MONTH", "BD_DAY", "EXPERIENCE"]
     list_of_data = list()
+
     for each_player_id in complete_dataframe["ID"]:
 
         #SET_ID
@@ -168,15 +138,22 @@ def get_additional_data(complete_dataframe:pd.DataFrame) -> None:
         except:
             list_of_each_player.append(None)
 
+        print(f"{each_player_id} ready!")
+
         list_of_data.append(list_of_each_player)
 
-    dataframe = pd.DataFrame(columns=list_of_colums, data=list_of_data)
-    dataframe.to_csv(".\dados\web_scraping.csv")
+    dataframe = pd.DataFrame(columns=list_of_colums, data=list_of_data).reset_index(drop=True)
 
-    return None
+    if to_save == True:
+        dataframe.to_csv(f"{path_for_save}\{final_csv_name}", index=False)
 
-def get_teams_dict():
+    return dataframe
+
+def get_teams_dict() -> dict:
     """
+    Essa função tem como objetivo gerar um dicionário com o nome dos times e os 
+    seus respectivos ID's. Basicamente vai ajudar na conversão e na manipulação dos 
+    dados.
     """
     dataframe = pd.read_csv(".\dados\\teams_data.csv")
 
@@ -187,15 +164,22 @@ def get_teams_dict():
     for each_id, each_name in zip(list_of_ids, list_of_names):
         dict_teams[each_name] = each_id
 
-    return dict_teams
+    return dict(dict_teams)
 
 
 
 if __name__ == "__main__":
-    get_teams_data(".\dados\\teams_data.csv")
-    get_players_data(".\dados\\players_data.csv")
-    get_players_data(".\dados\\active_players_data.csv", True)
-    get_nba_players_ratings(".\dados\\players_ratings.csv")
-    print(get_teams_dict)
-    dataframe = pd.read_csv(".\dados\complete_players_database.csv")
-    get_additional_data(dataframe)
+    #OK 2023_10_21
+    get_teams_data()
+
+    #OK 2023_10_21
+    get_players_data()
+
+    #OK 2023_10_21
+    get_nba_players_ratings()
+
+    #OK 2023_10_21
+    get_teams_dict()
+
+    #OK 2023_10_21
+    web_scraping_nba(".\dados\complete_players_database.csv", False, "", "").head()
