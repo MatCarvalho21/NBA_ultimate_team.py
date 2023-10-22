@@ -125,5 +125,4 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
 
 if __name__ == "__main__":
     for indice in range(61, 81):
-        make_cards(indice, (255,255,255), "card_centurion", True, ".\design\\final_images\centurion_cards")
-    
+        make_cards(indice, (255,255,255), "card_centurion", False, ".\design\\final_images\centurion_cards")
