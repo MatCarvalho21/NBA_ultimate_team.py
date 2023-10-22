@@ -1,3 +1,4 @@
+from var_country_names import dict_rigth_countries
 import pandas as pd  
 dict_correct = {29: ["1628389", "Miami Heat", "13", "Center-Forward", "EUA", "26", "1997", "JULY", "18", "6"], #BAM ADEBAYO
                 51: ["1641705", "San Antonio Spurs", "1", "Forward-Center", "France", "19", "2004", "JANUARY", "4", "Rookie"], #VICTOR WEMBANYAMA
@@ -38,6 +39,37 @@ def fixing_data(csv_path:str, path_for_save:str, to_save:bool) -> pd.DataFrame:
     
     return dataframe
 
+def fixing_countries(path_for_csv:str, to_save:bool=False, csv_name:str="", path_to_save:str="") -> pd.DataFrame:
+    """
+    Essa função pega um dataframe com a coluna "COUNTRY" e gera uma nova coluna nesse dataframe
+    com um código referente ao país no formato iso 3166.
+    """
+    dataframe = pd.read_csv(f"{path_for_csv}")
+
+    list_of_countries = list()
+
+    for each_country in list(dataframe["COUNTRY"]):
+            if each_country == "EUA" or each_country == "USA":
+                list_of_countries.append("US")
+            elif each_country.upper() == "TURKEY":
+                list_of_countries.append("TR")
+            elif each_country == "DRC":
+                list_of_countries.append("CD")
+            elif each_country.upper() == "UNITED KINGDOM":
+                list_of_countries.append("GB")
+            else:
+                list_of_countries.append(dict_rigth_countries[each_country.upper()])
+
+    dataframe["CORRECT_COUNTRY"] = list_of_countries
+
+    if to_save == True:
+          dataframe.to_csv(f"{path_to_save}\{csv_name}", index=False)
+
+    return dataframe
+
 if __name__ == "__main__":
     #OK 2023_10_21
     fixing_data(".\dados\web_scraping.csv", "", False)
+
+    #OK 2023_10_21
+    fixing_countries(".\dados\\final_dataframe.csv", False, "final_dataframe.csv", ".\dados")

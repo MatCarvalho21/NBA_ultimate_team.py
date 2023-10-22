@@ -6,7 +6,7 @@ from get_nba_data import get_teams_dict
 teams_dict = get_teams_dict()
 text_color = (64, 52, 30)
 
-def make_cards(index:int, text_color_rgb:tuple, card_version:str, path_for_save:str) -> None:
+def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=False, path_for_save:str="") -> None:
     """
     Essa função vai gerar e salvar a carta de um jogador com base no seu ID. Ela recebe, além do ID, 
     a cor do texto da carta no formato RGB, a versão da carta, apenas o nome sem a extensão, e o path
@@ -24,14 +24,24 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, path_for_save:
         player_full_name = row_list[1]
 
     player_id = row_list[0]
+    flag_code = row_list[58]
 
     image_card = Image.open(f".\design\cards_images\{card_version}.png")
     image_player = Image.open(f".\design\players_images\\{player_id}.png").convert("RGBA")
     image_league = Image.open(".\design\cards_images\league_logo.png").convert("RGBA")
+    image_flag = Image.open(f".\design\\flags_images\{flag_code}.png")
     card_draw = ImageDraw.Draw(image_card)
 
     #SET_CARD
     largura_carta, altura_carta = image_card.size
+
+    #SET_FLAG
+    if flag_code == "CH":
+        image_flag = image_flag.resize((70, 70))
+        image_card.paste(image_flag, (500, 1470))
+    else:
+        image_flag = image_flag.resize((100, 70))
+        image_card.paste(image_flag, (470, 1475))
 
     #SET_NAME
     text_font = ImageFont.truetype("arial.ttf", 105)
@@ -93,9 +103,12 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, path_for_save:
     card_draw.text((840, 1350), text_05, fill=text_color, font=fonte, stroke_width=2)
     card_draw.text((995, 1350), text_06, fill=text_color, font=fonte, stroke_width=2)
 
-    image_card.save(f"{path_for_save}\{player_id}_{card_version}.png")
+    if to_save == True:
+        image_card.save(f"{path_for_save}\{player_id}_{card_version}.png")
+
     return None
 
 if __name__ == "__main__":
-    for i in range(463, 477):
-        make_cards(i, (255, 255, 255), "card_gold")
+    for indice in range(0, 21):
+        make_cards(indice, text_color, "card_gold", True, ".\design\\final_images")
+    
