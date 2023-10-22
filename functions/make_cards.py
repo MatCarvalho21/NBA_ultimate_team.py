@@ -3,6 +3,16 @@ import pandas as pd
 import numpy as np   
 from get_nba_data import get_teams_dict
 
+dict_positions = {
+    "Guard":"PG/SG",
+    "Forward":"SF/PF",
+    "Center":"CE/PF",
+    "Guard-Forward":"SG/SF",
+    "Forward-Center":"PF/CE",
+    "Center-Forward":"CE/PF",
+    "Forward-Guard":"SF/SG", 
+}
+
 teams_dict = get_teams_dict()
 text_color = (64, 52, 30)
 
@@ -53,6 +63,11 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     player_array = np.array(image_player)
     player_mask = (player_array[:, :, 3] > 0)
     image_card.paste(image_player, (144, 410), Image.fromarray(player_mask))
+
+    #SET_POSITION
+    position = dict_positions[row_list[51]]
+    text_font = ImageFont.truetype("arial.ttf", 55)
+    card_draw.text((228, 480), position, fill=text_color, font=text_font, stroke_width=1)
 
     #SET_OVERALL
     player_overall = str(int(row_list[5] - 5))
@@ -109,6 +124,6 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     return None
 
 if __name__ == "__main__":
-    for indice in range(0, 21):
-        make_cards(indice, text_color, "card_gold", True, ".\design\\final_images")
+    for indice in range(61, 81):
+        make_cards(indice, (255,255,255), "card_centurion", True, ".\design\\final_images\centurion_cards")
     
