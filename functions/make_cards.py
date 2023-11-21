@@ -124,5 +124,18 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     return None
 
 if __name__ == "__main__":
+
     for indice in range(0, 100):
-        make_cards(indice, text_color, "card_gold", True, ".\cartas\cartas_ouro")
+        make_cards(indice, text_color, "card_gold", False, ".\cartas\cartas_ouro")
+
+    lista_de_exemplos = [0, 2, 3, 4, 5, 7]
+    dict_de_cartas = {"card_gold":text_color, 
+                        "card_purple":(255,255,255),
+                        "card_default":(255,255,255), 
+                        "card_centurion":(255,255,255)}
+
+    for indice in range(0, 6):
+        chave = indice
+        if indice >= 4:
+            indice = indice - 4
+        make_cards(lista_de_exemplos[chave], list(dict_de_cartas.values())[indice], list(dict_de_cartas.keys())[indice], True, ".\cartas\exemplos")
