@@ -70,7 +70,7 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     card_draw.text((228, 480), position, fill=text_color, font=text_font, stroke_width=1)
 
     #SET_OVERALL
-    player_overall = str(int(row_list[5] - 5))
+    player_overall = str(int(row_list[5]))
     text_font = ImageFont.truetype("arial.ttf", 165)
     card_draw.text((220, 300), player_overall, fill=text_color, font=text_font, stroke_width=3)
 
@@ -119,10 +119,23 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     card_draw.text((995, 1350), text_06, fill=text_color, font=fonte, stroke_width=2)
 
     if to_save == True:
-        image_card.save(f"{path_for_save}\{player_id}_{card_version}.png")
+        image_card.save(f"{path_for_save}\{index}_{row_list[1].lower()}_{row_list[2].lower()}_{player_id}.png")
 
     return None
 
 if __name__ == "__main__":
-    for indice in range(61, 81):
-        make_cards(indice, (255,255,255), "card_centurion", False, ".\design\\final_images\centurion_cards")
+
+    for indice in range(0, 100):
+        make_cards(indice, text_color, "card_gold", False, ".\cartas\cartas_ouro")
+
+    lista_de_exemplos = [0, 2, 3, 4, 5, 7]
+    dict_de_cartas = {"card_gold":text_color, 
+                        "card_purple":(255,255,255),
+                        "card_default":(255,255,255), 
+                        "card_centurion":(255,255,255)}
+
+    for indice in range(0, 6):
+        chave = indice
+        if indice >= 4:
+            indice = indice - 4
+        make_cards(lista_de_exemplos[chave], list(dict_de_cartas.values())[indice], list(dict_de_cartas.keys())[indice], True, ".\cartas\exemplos")
