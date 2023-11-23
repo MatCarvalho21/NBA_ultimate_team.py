@@ -40,4 +40,4 @@ However, in the coming months, I plan to develop a card game, also in Python, th
 
 ## Cards:
 The card models were directly inspired by those of EAFC 24. The attributes, which are different in basketball, come from NBA 2K24, and the images are the same ones used by the NBA for promotion. I'll leave some examples of cards below to give you a preview of the project, but all of them can be found in the `design\final_images` folder.
-![Card Examples](design/cards_images/examples.png)
+![Card Examples](design/cards_images/exemplos.png)
