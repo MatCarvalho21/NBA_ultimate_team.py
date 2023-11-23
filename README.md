@@ -18,6 +18,8 @@ Porém, nos próximos meses, pretendo desenvolver um jogo de cartas, tabém em p
 O modelos das cartas foi diretamente inspirados nas do EAFC 24. Os atributos, que são diferentes no basquete, são oriundos do NBA 2K24 e as imagens são as mesmas usadas pela NBA para divulgação. Vou deixar alguns 
 exemplos de cartas logo abaixo para dar uma prévia do projeto, mas todas se encontram na pasta `design\final_images`.
 ![Exemplos de Cartas](design/cards_images/exemplos.png)
+## Escalação:
+![Exemplos de Escalação](cartas\celtics_lineup\celtics_lineup.png)
 
 # NBA Ultimate Team (English Version)
 ## Objective:
@@ -41,3 +43,6 @@ However, in the coming months, I plan to develop a card game, also in Python, th
 ## Cards:
 The card models were directly inspired by those of EAFC 24. The attributes, which are different in basketball, come from NBA 2K24, and the images are the same ones used by the NBA for promotion. I'll leave some examples of cards below to give you a preview of the project, but all of them can be found in the `design\final_images` folder.
 ![Card Examples](design/cards_images/exemplos.png)
+
+## Lineup:
+![Lineup Example](cartas\celtics_lineup\celtics_lineup.png)
