@@ -225,3 +225,22 @@ body{
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 5%;
 }
+
+
+#escolha_escalacao_1{
+    position: absolute;
+    left: 1.5%;
+    top: 25%;
+    padding: 0.5%;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 5%;
+}
+
+#escolha_escalacao_2{
+    position: absolute;
+    left: 1.5%;
+    top: 30%;
+    padding: 0.5%;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 5%;
+}
