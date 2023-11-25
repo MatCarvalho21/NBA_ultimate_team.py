@@ -44,7 +44,7 @@
         <img id="CE" src="../../cartas/celtics_lineup/35_porzingis_kristaps_204001.png" alt="">
     </div>
 
-    <select id="escolha_times">
+    <select id="escolha_times" onchange="mudar_imagem_quadra()">
         <option value="default">Escolha seu time:</option>
         <option value="atlanta_hawks">Atlanta Hawks</option>
         <option value="boston_celtics">Boston Celtics</option>
@@ -77,12 +77,6 @@
         <option value="utah_jazz">Utah Jazz</option>
         <option value="washington_wizards">Washington Wizards</option>
     </select>
-
-    <div id="central_de_comando">
-        <button id="selecionar_quadra" onclick="mudar_imagem_quadra()">
-            <a href="">Atualizar</a>
-        </button>
-    </div>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 function mudar_imagem_quadra() {
     /* Função que vai, com base em um drop-options, atualizar a escolha do 
     usuário a imagem de fundo da quardra. A função será chamada quando o o botão, logo
@@ -7,6 +8,7 @@ function mudar_imagem_quadra() {
     var selecionado = document.getElementById("escolha_times").value;
   
     // Atualiza a src da imagem com base na seleção
-    document.getElementById("imagem_quadra").src = "quadra_" + selecionado + ".png";
-
+    document.getElementById("imagem_quadra").src = "imagens_de_quadras/quadra_" + selecionado + ".png";
   }
+
+  

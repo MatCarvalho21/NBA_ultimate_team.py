@@ -15,7 +15,7 @@ body{
 }
 
 #quadra{
-    width: 49.4vw;
+    width: 50vw;
     height: 44vw;
     display: flex;
     background: rgb(0, 0, 0);
@@ -29,7 +29,7 @@ body{
     object-fit: cover;
     overflow: hidden;
     position: relative;
-    object-position: center 1%;
+    object-position: center 12%;
 }
 
 /* PRIMEIRO ARMADOR */
