@@ -18,7 +18,7 @@ body{
     width: 80vw;
     height: 40vw;
     display: flex;
-    background: rgb(0, 0, 0);
+    background: rgb(34, 34, 34);
     position: absolute;
     padding: 1.3%;
     left: 17.5%;
@@ -217,30 +217,54 @@ body{
 
 /* SELECT DOS TIMES */ 
 
-#escolha_times{
+#central_de_controle{
+    width: 15%;
+    height: 80%;
     position: absolute;
+    background-color: rgb(34, 34, 34);
     left: 1.5%;
-    top: 20%;
-    padding: 0.5%;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
-    border-radius: 5%;
+    border-radius: 7.5px;
 }
 
+#logo_pagina{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    background-color: rgb(34, 34, 34);
+}
+
+#logo_pagina img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#escolha_times{
+    position: absolute;
+    left: 11%;
+    top: 30%;
+    padding: 1.5%;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 4px;
+}
 
 #escolha_escalacao_1{
     position: absolute;
-    left: 1.5%;
-    top: 25%;
-    padding: 0.5%;
+    left: 11%;
+    top: 35%;
+    padding: 1.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
-    border-radius: 5%;
+    border-radius: 4px;
 }
 
 #escolha_escalacao_2{
     position: absolute;
-    left: 1.5%;
-    top: 30%;
-    padding: 0.5%;
+    left: 11%;
+    top: 40%;
+    padding: 1.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
-    border-radius: 5%;
+    border-radius: 4px;
 }
+
