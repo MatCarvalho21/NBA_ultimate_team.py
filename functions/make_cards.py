@@ -139,8 +139,11 @@ if __name__ == "__main__":
         if indice >= 4:
             indice = indice - 4
         make_cards(lista_de_exemplos[chave], list(dict_de_cartas.values())[indice], list(dict_de_cartas.keys())[indice], False, ".\cartas\exemplos")
-    """
+    
     lista_de_jogadores_celtic = [7, 19, 35, 27, 80]
     for indice in lista_de_jogadores_celtic:
-        make_cards(indice, text_color, "card_gold", True, ".\cartas\celtics_lineup")
-    
+        make_cards(indice, text_color, "card_gold", False, ".\cartas\celtics_lineup")
+    """
+    lista_de_jogadores_celtic = [0, 23, 159, 67, 49]
+    for indice in lista_de_jogadores_celtic:
+        make_cards(indice, text_color, "card_gold", True, ".\cartas\\nuguets_lineup")

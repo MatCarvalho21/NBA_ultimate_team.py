@@ -15,22 +15,23 @@ body{
 }
 
 #quadra{
-    width: 50vw;
-    height: 44vw;
+    width: 80vw;
+    height: 40vw;
     display: flex;
     background: rgb(0, 0, 0);
     position: absolute;
     padding: 1.3%;
+    left: 17.5%;
+    border-radius: 15px;
 }
 
 #imagem_quadra{
     width: 100%;
     height: auto;
-    object-fit: cover;
-    overflow: hidden;
     position: relative;
-    object-position: center 12%;
 }
+
+/* ################################################################################### ################################################################################## */
 
 /* PRIMEIRO ARMADOR */
 
@@ -38,10 +39,10 @@ body{
     width: 9%;
     height: 22%;
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 52.5%;
+    left: 47.5%;
 }
-#PG{
+#PG1{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -55,11 +56,11 @@ body{
     width: 9%;
     height: 22%;
     position: absolute;
-    top: 50%;
-    right: 40%;
+    bottom: 55%;
+    left: 47.5%;
 }
 
-#SG{
+#SG1{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -73,11 +74,11 @@ body{
     width: 9%;
     height: 22%;
     position: absolute;
-    top: 25%;
-    right: 32%;
+    bottom: 22.5%;
+    left: 37.5%;
 }
 
-#SF{
+#SF1{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -91,11 +92,11 @@ body{
     width: 9%;
     height: 22%;
     position: absolute;
-    top: 25%;
-    left: 32%;
+    top: 20%;
+    left: 37.5%;
 }
 
-#PF{
+#PF1{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -109,10 +110,11 @@ body{
     width: 9%;
     height: 22%;
     position: absolute;
-    top: 20%;
+    top: 37.5%;
+    left: 27.5%;
 }
 
-#CE{
+#CE1{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -120,19 +122,106 @@ body{
     position: relative;
 }
 
+/* ################################################################################### ################################################################################## */
+
+/* PRIMEIRO ARMADOR */
+
+#sexto_slot{
+    width: 9%;
+    height: 22%;
+    position: absolute;
+    top: 52.5%;
+    left: 59%;
+}
+#PG2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SEGUNDO ARMADOR */
+
+#setimo_slot{
+    width: 9%;
+    height: 22%;
+    position: absolute;
+    bottom: 55%;
+    left: 59%;
+}
+
+#SG2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* PRIMEIRO ALA */
+
+#oitavo_slot{
+    width: 9%;
+    height: 22%;
+    position: absolute;
+    bottom: 22.5%;
+    left: 69%;
+}
+
+#SF2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SEGUNDO ALA */
+
+#nono_slot{
+    width: 9%;
+    height: 22%;
+    position: absolute;
+    top: 20%;
+    left: 69%;
+}
+
+#PF2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* PIVÔ */
+
+#decimo_slot{
+    width: 9%;
+    height: 22%;
+    position: absolute;
+    top: 37.5%;
+    left: 79%;
+}
+
+#CE2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ################################################################################### ################################################################################## */
+
 /* SELECT DOS TIMES */ 
 
 #escolha_times{
     position: absolute;
-    left: 5%;
+    left: 1.5%;
     top: 20%;
     padding: 0.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 5%;
-}
-
-#selecionar_quadra{
-    position: absolute;
-    left: 0;
-    top: 27.5%;
 }
