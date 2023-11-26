@@ -77,7 +77,7 @@ def merging_dataframes_two(to_save:bool=True, path_for_save:str="", csv_name:str
 
 if __name__ == "__main__":
     #OK 2023_10_21
-    merging_dataframes(to_save=False, error_players=True)[1].keys() #LISTA DE JOGADORES QUE FICARAM DE FORA
+    print(merging_dataframes(to_save=False, error_players=True)[1].keys()) #LISTA DE JOGADORES QUE FICARAM DE FORA
     merging_dataframes(to_save=False)
 
     #OK 2023_10_21

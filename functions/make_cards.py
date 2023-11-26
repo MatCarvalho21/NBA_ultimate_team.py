@@ -15,6 +15,7 @@ dict_positions = {
 
 teams_dict = get_teams_dict()
 text_color = (64, 52, 30)
+dataframe = pd.read_csv(".\dados\\final_dataframe.csv")
 
 def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=False, path_for_save:str="") -> None:
     """
@@ -24,7 +25,6 @@ def make_cards(index:int, text_color_rgb:tuple, card_version:str, to_save:bool=F
     """
     
     text_color = text_color_rgb
-    dataframe = pd.read_csv(".\dados\\final_dataframe.csv")
     dataframe.fillna(0, inplace=True)
 
     row_list = dataframe.loc[index, :].values.flatten().tolist()
@@ -140,10 +140,12 @@ if __name__ == "__main__":
             indice = indice - 4
         make_cards(lista_de_exemplos[chave], list(dict_de_cartas.values())[indice], list(dict_de_cartas.keys())[indice], False, ".\cartas\exemplos")
     
-    lista_de_jogadores_celtic = [7, 19, 35, 27, 80]
+    lista_de_jogadores_celtic = [, 19, 35, 27, 80]
     for indice in lista_de_jogadores_celtic:
         make_cards(indice, text_color, "card_gold", False, ".\cartas\celtics_lineup")
     """
-    lista_de_jogadores_celtic = [0, 23, 159, 67, 49]
+    print(dataframe[dataframe["TEAM"]=="Sacramento Kings"])
+
+    lista_de_jogadores_celtic = [472, 28, 106, 107, 108]
     for indice in lista_de_jogadores_celtic:
-        make_cards(indice, text_color, "card_gold", True, ".\cartas\\nuguets_lineup")
+        make_cards(indice, text_color, "card_gold", True, ".\web_page\initial_project\imagens_de_times\\sacramento_kings")
