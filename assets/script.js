@@ -44,8 +44,8 @@ function mudar_imagem_quadra() {
     var selecionado = document.getElementById("escolha_times").value;
   
     // Atualiza a src da imagem com base na seleção
-    document.getElementById("imagem_quadra").src = "imagens_de_quadras/quadra_" + selecionado + ".png";
-    document.getElementById("logo").src = "logos/logo_" + selecionado + ".png";
+    document.getElementById("imagem_quadra").src = "assets/imagens_de_quadras/quadra_" + selecionado + ".png";
+    document.getElementById("logo").src = "assets/logos/logo_" + selecionado + ".png";
     document.getElementById("botao_download").style.backgroundColor = dicionario_de_cores[selecionado]
     document.body.style.backgroundColor = dicionario_de_cores[selecionado]
   }
@@ -53,11 +53,11 @@ function mudar_imagem_quadra() {
 function mudar_time(numero_escalacao){
   var selecionado = document.getElementById("escolha_escalacao_" + numero_escalacao).value;
 
-  document.getElementById("PG" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/PG_" + selecionado + ".png";
-  document.getElementById("SG" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/SG_" + selecionado + ".png";
-  document.getElementById("SF" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/SF_" + selecionado + ".png";
-  document.getElementById("PF" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/PF_" + selecionado + ".png";
-  document.getElementById("CE" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/CE_" + selecionado + ".png";
+  document.getElementById("PG" + numero_escalacao).src = "assets/imagens_de_times/" + selecionado + "/PG_" + selecionado + ".png";
+  document.getElementById("SG" + numero_escalacao).src = "assets/imagens_de_times/" + selecionado + "/SG_" + selecionado + ".png";
+  document.getElementById("SF" + numero_escalacao).src = "assets/imagens_de_times/" + selecionado + "/SF_" + selecionado + ".png";
+  document.getElementById("PF" + numero_escalacao).src = "assets/imagens_de_times/" + selecionado + "/PF_" + selecionado + ".png";
+  document.getElementById("CE" + numero_escalacao).src = "assets/imagens_de_times/" + selecionado + "/CE_" + selecionado + ".png";
 }
 
 function download(){
