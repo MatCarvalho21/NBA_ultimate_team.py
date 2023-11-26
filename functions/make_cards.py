@@ -148,4 +148,4 @@ if __name__ == "__main__":
 
     lista_de_jogadores_celtic = [472, 28, 106, 107, 108]
     for indice in lista_de_jogadores_celtic:
-        make_cards(indice, text_color, "card_gold", True, ".\web_page\initial_project\imagens_de_times\\sacramento_kings")
+        make_cards(indice, text_color, "card_gold", False, ".\web_page\initial_project\imagens_de_times\\sacramento_kings")

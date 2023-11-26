@@ -49,3 +49,12 @@ if __name__ == "__main__":
 
     #OK 2023_10_21
     save_flags(".\\dados\\final_dataframe.csv", ".\\design\\flags_images", "png", to_save=False)
+
+"""
+response = requests.get('https://cdn.nba.com/headshots/nba/latest/1040x760/203468.png')
+
+if response.status_code == 200:
+    with open(f"{'./design/players_images'}/{203468}.{'png'}", "wb") as file:
+        file.write(response.content)
+    print(f'{203468} pronto.')
+"""
