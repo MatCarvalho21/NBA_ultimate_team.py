@@ -15,14 +15,13 @@ body{
 }
 
 #quadra{
-    width: 80vw;
+    width: 75vw;
     height: 40vw;
     display: flex;
     background: rgb(34, 34, 34);
-    position: absolute;
-    top: 8.5%;
+    position: relative;
     padding: 1.3%;
-    left: 17.5%;
+    left: 8vw;
     border-radius: 15px;
 }
 
@@ -37,11 +36,10 @@ body{
 /* PRIMEIRO ARMADOR */
 
 #primeiro_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 52.5%;
-    left: 47.5%;
+    top: 52.5vh;
+    left: 47.5vw;
 }
 #PG1{
     width: 100%;
@@ -54,11 +52,10 @@ body{
 /* SEGUNDO ARMADOR */
 
 #segundo_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    bottom: 55%;
-    left: 47.5%;
+    bottom: 50vh;
+    left: 47.5vw;
 }
 
 #SG1{
@@ -72,11 +69,10 @@ body{
 /* PRIMEIRO ALA */
 
 #terceiro_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    bottom: 22.5%;
-    left: 37.5%;
+    top: 55vh;
+    left: 38.8vw;
 }
 
 #SF1{
@@ -90,11 +86,10 @@ body{
 /* SEGUNDO ALA */
 
 #quarto_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 20%;
-    left: 37.5%;
+    bottom: 52.5vh;
+    left: 38.8vw;
 }
 
 #PF1{
@@ -108,11 +103,10 @@ body{
 /* PIVÔ */
 
 #quinto_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 37.5%;
-    left: 27.5%;
+    top: 37.5vh;
+    left: 30vw;
 }
 
 #CE1{
@@ -128,11 +122,10 @@ body{
 /* PRIMEIRO ARMADOR */
 
 #sexto_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 52.5%;
-    left: 59%;
+    top: 52.5vh;
+    right: 31.25vw;
 }
 #PG2{
     width: 100%;
@@ -145,11 +138,10 @@ body{
 /* SEGUNDO ARMADOR */
 
 #setimo_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    bottom: 55%;
-    left: 59%;
+    bottom: 50vh;
+    right: 31.25vw;
 }
 
 #SG2{
@@ -163,11 +155,10 @@ body{
 /* PRIMEIRO ALA */
 
 #oitavo_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    bottom: 22.5%;
-    left: 69%;
+    top: 55vh;
+    right: 22.55vw;
 }
 
 #SF2{
@@ -181,11 +172,10 @@ body{
 /* SEGUNDO ALA */
 
 #nono_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 20%;
-    left: 69%;
+    bottom: 52.5vh;
+    right: 22.55vw;
 }
 
 #PF2{
@@ -199,11 +189,10 @@ body{
 /* PIVÔ */
 
 #decimo_slot{
-    width: 9%;
-    height: 22%;
+    width: 9vw;
     position: absolute;
-    top: 37.5%;
-    left: 79%;
+    top: 37.5vh;
+    right: 13.75vw;
 }
 
 #CE2{
@@ -245,7 +234,7 @@ body{
 #escolha_times{
     position: absolute;
     left: 11%;
-    top: 30%;
+    top: 35%;
     padding: 1.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 4px;
@@ -254,7 +243,7 @@ body{
 #escolha_escalacao_1{
     position: absolute;
     left: 11%;
-    top: 40%;
+    top: 45%;
     padding: 1.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 4px;
@@ -263,7 +252,7 @@ body{
 #escolha_escalacao_2{
     position: absolute;
     left: 11%;
-    top: 50%;
+    top: 55%;
     padding: 1.5%;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 4px;
@@ -275,9 +264,37 @@ body{
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    top: 90%;
-    left: 8%;
-    background-color: rgb(255, 255, 255);
+    top: 62.5%;
+    left: 7%;
+    background-color: rgb(23, 23, 23);
     color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#central_de_controle label{
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 11%;
+}
+
+#label_1{
+    top: 31%;
+}
+
+#label_2{
+    top: 41%;
+}
+
+#label_3{
+    top: 51%;
+}
+
+#github{
+    position: absolute;
+    top: 88%;
+    color: white;
+    font-size: 300%;
+    left: 38%;
 }
