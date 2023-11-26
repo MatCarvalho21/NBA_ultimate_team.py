@@ -22,7 +22,7 @@ exemplos de cartas logo abaixo para dar uma prévia do projeto, mas todas se enc
 Esse é um exemplo de como as cartas vão se comportar no jogo, pelo menos eu espero que dê certo. Espero desenvolver uma dinâmica de construção de equipes em vários níveis, desde os jogadores até o design das quadras. 
 
 
-![Exemplos de Escalação](cartas/cards_images/exemplo.png)
+![Exemplos de Escalação](design/cards_images/exemplo.png)
 
 # NBA Ultimate Team (English Version)
 ## Objective:
@@ -51,4 +51,4 @@ The card models were directly inspired by those of EAFC 24. The attributes, whic
 This is an example of how the cards will behave in the game, at least I hope it works out. I plan to develop a team-building dynamic at various levels, from players to court design.
 
 
-![Lineup Example](cartas/cards_images/exemplo.png)
+![Lineup Example](design/cards_images/exemplo.png)
