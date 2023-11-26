@@ -60,5 +60,43 @@ function mudar_time(numero_escalacao){
   document.getElementById("CE" + numero_escalacao).src = "imagens_de_times/" + selecionado + "/CE_" + selecionado + ".png";
 }
 
-function screenshot(div_id){
+function download(){
+  var quadra = document.getElementById("escolha_times").value;
+  var time_1 = document.getElementById("escolha_escalacao_1").value;
+  var time_2 =document.getElementById("escolha_escalacao_2").value;
+
+  const srcElement = document.querySelector("body");
+
+  html2canvas(srcElement).then(canvas => {
+
+    const a = document.createElement("a");
+    a.href = canvas.toDataURL();
+    a.download = time_1 + "_vs_" + time_2 + "_in_" + quadra + "_court" + ".png";
+    a.click();
+
+  })
+}
+
+function escurecedor(){
+  var quadra = document.getElementById("escolha_times").value;
+  var rgb = dicionario_de_cores[quadra];
+  var rgb_peaces = rgb.split(", ");
+
+  var primeiro_componente = parseInt((rgb_peaces[0].split("("))[1]);
+  var segundo_componente = parseInt(rgb_peaces[1]);
+  var terceiro_componente = parseInt((rgb_peaces[2].split(")"))[0]);
+
+  primeiro_componente = Math.max(0, primeiro_componente - 40);
+  segundo_componente = Math.max(0, segundo_componente - 40);
+  terceiro_componente = Math.max(0, terceiro_componente - 40);
+
+  var codigo_final = "rgb(" + primeiro_componente + ", " + segundo_componente + ", " + terceiro_componente + ")";
+
+  document.getElementById("botao_download").style.backgroundColor = codigo_final;
+}
+
+function clareador(){
+  var quadra = document.getElementById("escolha_times").value;
+
+  document.getElementById("botao_download").style.backgroundColor = dicionario_de_cores[quadra];
 }
