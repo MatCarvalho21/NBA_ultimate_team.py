@@ -46,8 +46,8 @@ function mudar_imagem_quadra() {
     // Atualiza a src da imagem com base na seleção
     document.getElementById("imagem_quadra").src = "assets/imagens_de_quadras/quadra_" + selecionado + ".png";
     document.getElementById("logo").src = "assets/logos/logo_" + selecionado + ".png";
-    document.getElementById("botao_download").style.backgroundColor = dicionario_de_cores[selecionado]
-    document.body.style.backgroundColor = dicionario_de_cores[selecionado]
+    document.getElementById("botao_download").style.backgroundColor = dicionario_de_cores[selecionado];
+    document.body.style.backgroundColor = dicionario_de_cores[selecionado];
   }
 
 function mudar_time(numero_escalacao){
