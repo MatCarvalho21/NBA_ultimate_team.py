@@ -473,14 +473,15 @@ let jogadores = ['Nikola Jokic',
 	'De�Aaron Fox',
     'C.J. McCollum']
 
-    /* tá pegando a div onde vai ficar a caixa de resultados */
-const CaixaDeResultados = document.querySelector(".caixa_de_resultado");
-
-    /* tá pegando a caixa de texto onde colocamos os nomes para buscar */
-const CaixaDeEntrada = document.getElementById("input_box");
-
     /* verifica a ativação da caixa de texto para executar o código */
-CaixaDeEntrada.onkeyup = function(){
+function escolha_de_jogadores(numero_do_jogador){
+
+	/* tá pegando a div onde vai ficar a caixa de resultados */
+	const CaixaDeResultados = document.querySelector(".caixa_de_resultado" + "_" + numero_do_jogador);
+
+	/* tá pegando a caixa de texto onde colocamos os nomes para buscar */
+	const CaixaDeEntrada = document.getElementById("input_box" + "_" + numero_do_jogador);
+
     /* cria uma lista vazia onde vão ser adicionadas as correspondências */
     let resultados = [];
     /* cria uma variável com o texto que foi inserido pelo usuário */
@@ -501,19 +502,19 @@ CaixaDeEntrada.onkeyup = function(){
     if(!resultados.length){
         CaixaDeResultados.innerHTML = "";
     }
-}
 
-/* pega o conteúdo da lista e transforma numa série de sugestões */
-function display(resultados){
-    const content = resultados.map((list) => {
-        return "<li onclick=selectInput(this)>" + list + "</li>";
-    });
+	/* pega o conteúdo da lista e transforma numa série de sugestões */
+	function display(resultados){
+		const content = resultados.map((list) => {
+			return "<li onclick=selectInput(this)>" + list + "</li>";
+		});
 
-    CaixaDeResultados.innerHTML = "<ul>" + content.join("") + "</ul>";
+		CaixaDeResultados.innerHTML = "<ul>" + content.join("") + "</ul>";
+	}
 }
 
 /* quando o usuário clica em uma das sugestões ela vai para a caixa de entrada e a caixa de sugestões some */
 function selectInput(list){
-    CaixaDeEntrada.value = list.innerHTML;
-    CaixaDeResultados.innerHTML = "";
+	CaixaDeEntrada.value = list.innerHTML;
+	CaixaDeResultados.innerHTML = "";
 }
