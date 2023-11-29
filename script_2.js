@@ -48,6 +48,9 @@ function set_tema(){
     /* mudando a cor de fundo da página */
     document.body.style.backgroundColor = dicionario_de_cores[tema_selecionado];
 
+    /* mudando a linha de fora do input */
+    document.getElementById("selecao_quadra").style.outline = "2px solid " + dicionario_de_cores[tema_selecionado];
+
     /* FALTA COLOCAR O BOTÃO DE DOWNLOAD E EVENTUALMENTE MUDAR A COR DELE */ 
 }
 
