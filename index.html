@@ -1,195 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- atribuindo um arquivo js para a página -->
-    <script type="text/javascript" src="assets/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <!-- atribuindo um arquivo css para a página -->
-    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
-
-    <!-- configurando o icon da página -->
     <link rel="icon" href="design\cards_images\league_logo.png">
 
-
+    <link rel="stylesheet" type="text/css" href="style_2.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <!-- configurando o título da página -->
-    <title>NBA Ultimate Team</title>
-</head>
+    <script type="text/javascript" src="script_2.js"></script>
 
+    <title>NBA Ultimate Team (Teste)</title>
+</head>
 <body>
 
-    <div id="conteudo_grafico">
-        <div id="quadra">
-            <img id="imagem_quadra" src="assets/imagens_de_quadras/quadra_padrao.png" alt="">
+    <div id="cabecalho">
+
+        <div id="cabecalho_vazio">
         </div>
 
-        <div id="primeiro_slot">
-            <img id="PG1" src="" alt="">
+        <div id="cabecalho_logo">
+            <img src="design\cards_images\league_logo.png" alt="Logo da Página" id="logo">
         </div>
 
-        <div id="segundo_slot">
-            <img id="SG1" src="" alt="">
-        </div>
-
-        <div id="terceiro_slot">
-            <img id="SF1" src="" alt="">
-        </div>
-
-        <div id="quarto_slot">
-            <img id="PF1" src="" alt="">
-        </div>
-
-        <div id="quinto_slot">
-            <img id="CE1" src="" alt="">
-        </div>
-
-        <div id="sexto_slot">
-            <img id="PG2" src="" alt="">
-        </div>
-
-        <div id="setimo_slot">
-            <img id="SG2" src="" alt="">
-        </div>
-
-        <div id="oitavo_slot">
-            <img id="SF2" src="" alt="">
-        </div>
-
-        <div id="nono_slot">
-            <img id="PF2" src="" alt="">
-        </div>
-
-        <div id="decimo_slot">
-            <img id="CE2" src="" alt="">
-        </div>
-    </div>
-
-    <div id="central_de_controle">
-
-        <div id="logo_pagina">
-            <img id="logo" src="assets/logos/logo_padrao.png" alt="">
-        </div>
-
-        <label id="label_1" for="escolha_times">Quadra:</label>
-        <select id="escolha_times" onchange="mudar_imagem_quadra()">
-            <option value="padrao">Escolha seu time:</option>
-            <option value="atlanta_hawks">Atlanta Hawks</option>
-            <option value="boston_celtics">Boston Celtics</option>
-            <option value="brooklyn_nets">Brooklyn Nets</option>
-            <option value="charlotte_hornets">Charlotte Hornets</option>
-            <option value="chicago_bulls">Chicago Bulls</option>
-            <option value="cleveland_cavaliers">Cleveland Cavaliers</option>
-            <option value="dallas_mavericks">Dallas Mavericks</option>
-            <option value="denver_nuggets">Denver Nuggets</option>
-            <option value="detroit_pistons">Detroit Pistons</option>
-            <option value="golden_state_warriors">Golden State Warriors</option>
-            <option value="houston_rockets">Houston Rockets</option>
-            <option value="indiana_pacers">Indiana Pacers</option>
-            <option value="la_clippers">Los Angeles Clippers</option>
-            <option value="los_angeles_lakers">Los Angeles Lakers</option>
-            <option value="memphis_grizzlies">Memphis Grizzlies</option>
-            <option value="miami_heat">Miami Heat</option>
-            <option value="milwaukee_bucks">Milwaukee Bucks</option>
-            <option value="minnesota_timberwolves">Minnesota Timberwolves</option>
-            <option value="new_orleans_pelicans">New Orleans Pelicans</option>
-            <option value="new_york_knicks">New York Knicks</option>
-            <option value="oklahoma_city_thunder">Oklahoma City Thunder</option>
-            <option value="orlando_magic">Orlando Magic</option>
-            <option value="philadelphia_76ers">Philadelphia 76ers</option>
-            <option value="phoenix_suns">Phoenix Suns</option>
-            <option value="portland_trail_blazers">Portland Trail Blazers</option>
-            <option value="sacramento_kings">Sacramento Kings</option>
-            <option value="san_antonio_spurs">San Antonio Spurs</option>
-            <option value="toronto_raptors">Toronto Raptors</option>
-            <option value="utah_jazz">Utah Jazz</option>
-            <option value="washington_wizards">Washington Wizards</option>
-        </select>
-
-        <label id="label_2" for="escolha_escalacao_1">Time 1:</label>
-        <select id="escolha_escalacao_1" onchange="mudar_time(1)">
-            <option value="padrao">Escolha seu time:</option>
-            <option value="atlanta_hawks">Atlanta Hawks</option>
-            <option value="boston_celtics">Boston Celtics</option>
-            <option value="brooklyn_nets">Brooklyn Nets</option>
-            <option value="charlotte_hornets">Charlotte Hornets</option>
-            <option value="chicago_bulls">Chicago Bulls</option>
-            <option value="cleveland_cavaliers">Cleveland Cavaliers</option>
-            <option value="dallas_mavericks">Dallas Mavericks</option>
-            <option value="denver_nuggets">Denver Nuggets</option>
-            <option value="detroit_pistons">Detroit Pistons</option>
-            <option value="golden_state_warriors">Golden State Warriors</option>
-            <option value="houston_rockets">Houston Rockets</option>
-            <option value="indiana_pacers">Indiana Pacers</option>
-            <option value="la_clippers">Los Angeles Clippers</option>
-            <option value="los_angeles_lakers">Los Angeles Lakers</option>
-            <option value="memphis_grizzlies">Memphis Grizzlies</option>
-            <option value="miami_heat">Miami Heat</option>
-            <option value="milwaukee_bucks">Milwaukee Bucks</option>
-            <option value="minnesota_timberwolves">Minnesota Timberwolves</option>
-            <option value="new_orleans_pelicans">New Orleans Pelicans</option>
-            <option value="new_york_knicks">New York Knicks</option>
-            <option value="oklahoma_city_thunder">Oklahoma City Thunder</option>
-            <option value="orlando_magic">Orlando Magic</option>
-            <option value="philadelphia_76ers">Philadelphia 76ers</option>
-            <option value="phoenix_suns">Phoenix Suns</option>
-            <option value="portland_trail_blazers">Portland Trail Blazers</option>
-            <option value="sacramento_kings">Sacramento Kings</option>
-            <option value="san_antonio_spurs">San Antonio Spurs</option>
-            <option value="toronto_raptors">Toronto Raptors</option>
-            <option value="utah_jazz">Utah Jazz</option>
-            <option value="washington_wizards">Washington Wizards</option>
-        </select>
-        
-        <label id="label_3" for="escolha_escalacao_2">Time 2:</label>
-        <select id="escolha_escalacao_2" onchange="mudar_time(2)">
-            <option value="padrao">Escolha seu time:</option>
-            <option value="atlanta_hawks">Atlanta Hawks</option>
-            <option value="boston_celtics">Boston Celtics</option>
-            <option value="brooklyn_nets">Brooklyn Nets</option>
-            <option value="charlotte_hornets">Charlotte Hornets</option>
-            <option value="chicago_bulls">Chicago Bulls</option>
-            <option value="cleveland_cavaliers">Cleveland Cavaliers</option>
-            <option value="dallas_mavericks">Dallas Mavericks</option>
-            <option value="denver_nuggets">Denver Nuggets</option>
-            <option value="detroit_pistons">Detroit Pistons</option>
-            <option value="golden_state_warriors">Golden State Warriors</option>
-            <option value="houston_rockets">Houston Rockets</option>
-            <option value="indiana_pacers">Indiana Pacers</option>
-            <option value="la_clippers">Los Angeles Clippers</option>
-            <option value="los_angeles_lakers">Los Angeles Lakers</option>
-            <option value="memphis_grizzlies">Memphis Grizzlies</option>
-            <option value="miami_heat">Miami Heat</option>
-            <option value="milwaukee_bucks">Milwaukee Bucks</option>
-            <option value="minnesota_timberwolves">Minnesota Timberwolves</option>
-            <option value="new_orleans_pelicans">New Orleans Pelicans</option>
-            <option value="new_york_knicks">New York Knicks</option>
-            <option value="oklahoma_city_thunder">Oklahoma City Thunder</option>
-            <option value="orlando_magic">Orlando Magic</option>
-            <option value="philadelphia_76ers">Philadelphia 76ers</option>
-            <option value="phoenix_suns">Phoenix Suns</option>
-            <option value="portland_trail_blazers">Portland Trail Blazers</option>
-            <option value="sacramento_kings">Sacramento Kings</option>
-            <option value="san_antonio_spurs">San Antonio Spurs</option>
-            <option value="toronto_raptors">Toronto Raptors</option>
-            <option value="utah_jazz">Utah Jazz</option>
-            <option value="washington_wizards">Washington Wizards</option>
-        </select>
-
-        <div id="botao_github">
+        <div id="cabecalho_github">
             <a href="https://github.com/MatCarvalho21/NBA_ultimate_team" target="_blank">
                 <i class="devicon-github-original-wordmark" id="github"></i>
             </a>
         </div>
 
-        <button id="botao_download" onclick="download()" onmouseover="escurecedor()" onmouseleave="clareador()">
-            Download
-        </button>
     </div>
 
+    <div id="central_de_controle">
+
+            <select name="" id="selecao_quadra" onchange='set_tema()'>
+                <option value="padrao">Seatle SuperSonics</option>
+                <option value="atlanta_hawks">Atlanta Hawks</option>
+                <option value="boston_celtics">Boston Celtics</option>
+                <option value="brooklyn_nets">Brooklyn Nets</option>
+                <option value="charlotte_hornets">Charlotte Hornets</option>
+                <option value="chicago_bulls">Chicago Bulls</option>
+                <option value="cleveland_cavaliers">Cleveland Cavaliers</option>
+                <option value="dallas_mavericks">Dallas Mavericks</option>
+                <option value="denver_nuggets">Denver Nuggets</option>
+                <option value="detroit_pistons">Detroit Pistons</option>
+                <option value="golden_state_warriors">Golden State Warriors</option>
+                <option value="houston_rockets">Houston Rockets</option>
+                <option value="indiana_pacers">Indiana Pacers</option>
+                <option value="la_clippers">Los Angeles Clippers</option>
+                <option value="los_angeles_lakers">Los Angeles Lakers</option>
+                <option value="memphis_grizzlies">Memphis Grizzlies</option>
+                <option value="miami_heat">Miami Heat</option>
+                <option value="milwaukee_bucks">Milwaukee Bucks</option>
+                <option value="minnesota_timberwolves">Minnesota Timberwolves</option>
+                <option value="new_orleans_pelicans">New Orleans Pelicans</option>
+                <option value="new_york_knicks">New York Knicks</option>
+                <option value="oklahoma_city_thunder">Oklahoma City Thunder</option>
+                <option value="orlando_magic">Orlando Magic</option>
+                <option value="philadelphia_76ers">Philadelphia 76ers</option>
+                <option value="phoenix_suns">Phoenix Suns</option>
+                <option value="portland_trail_blazers">Portland Trail Blazers</option>
+                <option value="sacramento_kings">Sacramento Kings</option>
+                <option value="san_antonio_spurs">San Antonio Spurs</option>
+                <option value="toronto_raptors">Toronto Raptors</option>
+                <option value="utah_jazz">Utah Jazz</option>
+                <option value="washington_wizards">Washington Wizards</option>
+            </select>
+
+    </div>
+
+    <div id="quadra">
+
+        <div id="quadra_background">
+            <img src="assets/imagens_de_quadras/quadra_padrao.png" alt="Fundo de Quadra" id="quadra_imagem">
+        </div>
+
+        <div id="jogador_1">
+            <img src="assets/imagens_de_times/philadelphia_76ers/CE_philadelphia_76ers.png" alt="">
+        </div>
+
+        <div id="jogador_2">
+            <img src="assets/imagens_de_times/milwaukee_bucks/PF_milwaukee_bucks.png" alt="">
+        </div>
+
+        <div id="jogador_3">
+            <img src="assets/imagens_de_times/los_angeles_lakers/SF_los_angeles_lakers.png" alt="">
+        </div>
+
+        <div id="jogador_4">
+            <img src="assets/imagens_de_times/phoenix_suns/SG_phoenix_suns.png" alt="">
+        </div>
+
+        <div id="jogador_5">
+            <img src="assets/imagens_de_times/oklahoma_city_thunder/SG_oklahoma_city_thunder.png" alt="">
+        </div>
+
+        <div id="jogador_6">
+            <img src="assets/imagens_de_times/denver_nuggets/CE_denver_nuggets.png" alt="">
+        </div>
+
+        <div id="jogador_7">
+            <img src="assets/imagens_de_times/phoenix_suns/PF_phoenix_suns.png" alt="">
+        </div>
+
+        <div id="jogador_8">
+            <img src="assets/imagens_de_times/boston_celtics/PF_boston_celtics.png" alt="">
+        </div>
+
+        <div id="jogador_9">
+            <img src="assets/imagens_de_times/dallas_mavericks/PG_dallas_mavericks.png" alt="">
+        </div>
+
+        <div id="jogador_10">
+            <img src="assets/imagens_de_times/golden_state_warriors/PG_golden_state_warriors.png" alt="">
+        </div>
+
+    </div>
+    
+<script type="text/javascript" src="autocomplete.js"></script>
 </body>
 </html>
