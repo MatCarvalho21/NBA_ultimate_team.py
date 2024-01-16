@@ -5,6 +5,7 @@ from const import RATING_LIST
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
+from set_data import mergeData
 
 def getTeamsData() -> pd.DataFrame:
     """
@@ -83,6 +84,78 @@ def get2KData():
     
     return dataframe
 
-def getWebData():
+def getWebData(path_for_dataframe:str="main/assets/database/merged_data.csv") -> pd.DataFrame:
     """
     """
+    dataframe = pd.read_csv(path_for_dataframe)
+
+    test_index = 0
+    list_of_columns = ["ID", "TEAM", "JERSEY_NUM", "POSITION", "COUNTRY", "AGE", "BD_YEAR", "BD_MONTH", "BD_DAY", "EXPERIENCE"]
+    list_of_data = list()
+    list_of_invisibels_players = list()
+    for each_id in dataframe["NBA_ID"]:
+        each_list_of_data = list()
+
+        response = requests.get(f"https://www.nba.com/player/{each_id}")
+        soup = BeautifulSoup(response.text, "html.parser")
+        p_tags = soup.find_all('p')
+        for index in range(len(p_tags)):
+            p_tags[index] = p_tags[index].text
+
+        # TEAM - NUMBER - POSITION
+        each_list_of_data.append(each_id)
+        try:
+            sub_list_01 = p_tags[0].split(" | ")
+            each_list_of_data.append(sub_list_01[0])
+            each_list_of_data.append(sub_list_01[1])
+            each_list_of_data.append(sub_list_01[2])
+        except:
+            try: 
+                each_list_of_data[1] = "Unknow"
+            except:
+                each_list_of_data.append("Unknow")
+            each_list_of_data.append("Unknow")
+            each_list_of_data.append("Unknow")
+            list_of_invisibels_players.append(each_id)
+
+        # COUNTRY
+        try:
+            index_country = p_tags.index("COUNTRY") + 1
+            each_list_of_data.append(p_tags[index_country])
+        except:
+            each_list_of_data.append("Unknow")
+
+        # AGE
+        try:
+            index_age = p_tags.index("AGE") + 1
+            each_list_of_data.append(p_tags[index_age][:2] + "y")
+        except:
+            each_list_of_data.append("Unknow")
+
+        # BIRTHDATE
+        try:
+            index_bd = p_tags.index("BIRTHDATE") + 1
+            sub_list_01 = p_tags[index_bd].split(", ")
+            each_list_of_data.append(sub_list_01[1])
+            sub_list_02 = sub_list_01[0].split(" ")
+            each_list_of_data.append(sub_list_02[0].upper())
+            each_list_of_data.append(sub_list_02[1])
+        except:
+            each_list_of_data.append("Unknow")
+            each_list_of_data.append("Unknow")
+            each_list_of_data.append("Unknow")
+
+        # EXPERIENCE
+        try:
+            index_ex = p_tags.index("EXPERIENCE") + 1
+            sub_list_01 = p_tags[index_ex].split(" ")
+            each_list_of_data.append(sub_list_01[0])
+        except:
+            each_list_of_data.append("Unknow")
+
+        list_of_data.append(each_list_of_data)
+        print(test_index)
+        test_index += 1
+    
+    dataframe = pd.DataFrame(data=list_of_data, columns=list_of_columns)
+    return dataframe

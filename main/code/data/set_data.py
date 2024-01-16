@@ -6,7 +6,6 @@ OBS.: FORAM NECESSÁRIAS ALGUMAS CORREÇÕES MANUAIS EM AMBOS OS ARQUIVOS PARA Q
 """
 
 import pandas as pd
-from get_data import saveData
 
 def mergeData(dataframe1:pd.DataFrame, macth_column_1:str, dataframe2:pd.DataFrame, macth_column_2:str, column_for_delete:str=None) -> pd.DataFrame:
     """
