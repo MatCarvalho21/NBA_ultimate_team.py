@@ -3,6 +3,13 @@ LISTA DE JOGADORES QUE ESTÃO EM UMA BASE DE DADOS, MAS NÃO NA OUTRA E, POR ISS
 ['Danny Green', 'Duane Washington Jr', 'Filip Petrusev', 'Kaiser Gates', 'Ibou Badji', 'Jaylen Martin', 'Shaquille Harrison', 'Xavier Moon']
 
 OBS.: FORAM NECESSÁRIAS ALGUMAS CORREÇÕES MANUAIS EM AMBOS OS ARQUIVOS PARA QUE NOMES IGUAIS, MAS COM DIGITAÇÃO DIFERENTE, NÃO FOSSEM DEIXADOS DE FORA
+
+LISTA DE JOGADORES QUE POR ALGUM ERRO, NÃO FOI FEITO O WEB SCRAPING, A MAIORIA DESEMPREGADO
+['Ryan Arcidiacono', 'Charles Bediako', 'Bismack Biyombo', 'Marques Bolden', 'Armoni Brooks', 'John Butler Jr', 'Cade Cunningham', 'Dexter Dennis', 
+'Alex Fudge', 'Danilo Gallinari','Ron Harper Jr', "D'Moi Hodge", 'Al Horford', 'Kyrie Irving', 'DaQuan Jeffries', 'Christian Koloko','Robin Lopez', 
+'Miles Norris', 'Onyeka Okongwu', "Sir'Jabari Rice", 'Ryan Rollins', 'Ricky Rubio','Javonte Smart', 'Ish Wainright', 'Lindell Wigginton']
+
+OBS.: PARA ESSES JOGADORES, OS DADOS FORAM INSERIDOS MANUALMENTE PARA COMPLETAR O DATAFRAME
 """
 
 import pandas as pd
