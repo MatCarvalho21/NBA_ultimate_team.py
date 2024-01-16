@@ -5,7 +5,6 @@ from const import RATING_LIST
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
-from set_data import mergeData
 
 def getTeamsData() -> pd.DataFrame:
     """

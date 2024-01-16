@@ -4,6 +4,16 @@ which initially was in JSON format but was converted to Python in order
 to be transformed into a dataframe with player data.
 """
 
+POSITION_DICT = {
+    "Guard":"PG/SG",
+    "Forward":"SF/PF",
+    "Center":"CE/PF",
+    "Guard-Forward":"SG/SF",
+    "Forward-Guard":"SF/SG",
+    "Center-Forward":"CE/PF",
+    "Forward-Center":"PF/CE"
+}
+
 RATING_LIST = [{
         "name": "Trae Young",
         "team": "Atlanta Hawks",

@@ -13,6 +13,8 @@ OBS.: PARA ESSES JOGADORES, OS DADOS FORAM INSERIDOS MANUALMENTE PARA COMPLETAR 
 """
 
 import pandas as pd
+from const import POSITION_DICT
+from get_data import saveData
 
 def mergeData(dataframe1:pd.DataFrame, macth_column_1:str, dataframe2:pd.DataFrame, macth_column_2:str, column_for_delete:str=None) -> pd.DataFrame:
     """
@@ -34,3 +36,22 @@ def mergeData(dataframe1:pd.DataFrame, macth_column_1:str, dataframe2:pd.DataFra
         merge_dataframe = merge_dataframe.drop(column_for_delete, axis=1)
 
     return merge_dataframe
+
+def setPosition(dataframe:pd.DataFrame) -> pd.DataFrame:
+    """
+    Adds a 'POSITION_CODE' column to the input dataframe based on a mapping from the 'POSITION' column.
+
+    Args:
+    dataframe (pd.DataFrame): The input dataframe containing a 'POSITION' column.
+
+    Returns:
+    pd.DataFrame: The input dataframe with an additional 'POSITION_CODE' column.
+    """
+    list_of_positions = dataframe["POSITION"]
+    list_of_position_code = list()
+    for each_position in list_of_positions:
+        list_of_position_code.append(POSITION_DICT[each_position])
+
+    dataframe["POSITION_CODE"] = list_of_position_code
+
+    return dataframe
