@@ -13,7 +13,7 @@ OBS.: PARA ESSES JOGADORES, OS DADOS FORAM INSERIDOS MANUALMENTE PARA COMPLETAR 
 """
 
 import pandas as pd
-from const import POSITION_DICT
+from const import POSITION_DICT, COUNTRIES_CODE
 from get_data import saveData
 
 def mergeData(dataframe1:pd.DataFrame, macth_column_1:str, dataframe2:pd.DataFrame, macth_column_2:str, column_for_delete:str=None) -> pd.DataFrame:
@@ -53,5 +53,24 @@ def setPosition(dataframe:pd.DataFrame) -> pd.DataFrame:
         list_of_position_code.append(POSITION_DICT[each_position])
 
     dataframe["POSITION_CODE"] = list_of_position_code
+
+    return dataframe
+
+def setCountriesCode(dataframe:pd.DataFrame) -> pd.DataFrame:
+    """
+    Adds a 'COUNTRY_CODE' column to the input dataframe based on a mapping from the 'COUNTRY' column.
+
+    Args:
+    dataframe (pd.DataFrame): The input dataframe containing a 'COUNTRY' column.
+
+    Returns:
+    pd.DataFrame: The input dataframe with an additional 'COUNTRY_CODE' column.
+    """
+    list_of_countries = dataframe["COUNTRY"]
+    list_of_countries_code = list()
+    for each_country in list_of_countries:
+        list_of_countries_code.append(COUNTRIES_CODE[each_country])
+
+    dataframe["COUNTRY_CODE"] = list_of_countries_code
 
     return dataframe
