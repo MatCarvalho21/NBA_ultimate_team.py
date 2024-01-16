@@ -1,8 +1,4 @@
-"""
-This file does not contain any functions, only a list of dictionaries, 
-which initially was in JSON format but was converted to Python in order 
-to be transformed into a dataframe with player data.
-"""
+
 
 COUNTRIES_CODE = {
     'Slovenia': 'SI',
