@@ -17,7 +17,7 @@ def makeCards(index:int=0, path_for_save:str="main/assets/images/full_cards") ->
     dataframe = pd.read_csv("main/assets/database/players.csv")
     row_list = dataframe.loc[index, :].values.flatten().tolist()
 
-    if row_list[7] >= 95:
+    if row_list[7] >= 90:
         im_card = Image.open("main/assets/images/cards/base_cards/full_inform.png").convert("RGBA")
         text_color = (242, 205, 136)
     elif row_list[7] >= 85:
@@ -68,10 +68,10 @@ def makeCards(index:int=0, path_for_save:str="main/assets/images/full_cards") ->
     im_card.paste(im_team, (750, 1460), Image.fromarray(team_mk))
 
     # PLAYER
-    im_player = im_player.resize((1050, 800))
+    im_player = im_player.resize((950, 720))
     player_ar = np.array(im_player)
     player_mk = (player_ar[:, :, 3] > 200)
-    im_card.paste(im_player, (125, 380), Image.fromarray(player_mk))
+    im_card.paste(im_player, (175, 460), Image.fromarray(player_mk))
 
     # OVERALL
     card_draw = ImageDraw.Draw(im_card)
