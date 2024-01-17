@@ -19,4 +19,4 @@ Segue abaixo, exemplo das diferentes versões de cartas. Elas são separadas da 
 * Ouro Raro (Dourado Brilhante): jogadores com overall maior ou igual a 85;
 
 
-![This is a alt text.](main\assets\images\example_full_cards.png "This is a sample image.")
+![This is a alt text.](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/example_full_cards.png?token=GHSAT0AAAAAACM43EKOAL3FFE57UBINDL4YZNIDBZQ "This is a sample image.")
