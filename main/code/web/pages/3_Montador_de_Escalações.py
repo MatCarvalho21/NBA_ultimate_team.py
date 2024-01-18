@@ -39,6 +39,5 @@ def pg_lineups():
         CE2 = st.selectbox(label="CE Time 2:", options=players, index=None, placeholder="selecione o jogador")
     
     st.markdown("---")
-    st.image(f"main/assets/images/page/courts/quadra_{quadra_selecionada}.png")
 
 pg_lineups()

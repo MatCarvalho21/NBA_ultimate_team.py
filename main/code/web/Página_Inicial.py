@@ -1,67 +1,62 @@
 import streamlit as st
 import pandas as pd  
+from functions import rakingCreator, DICT_ATRIBUTOS
 
 def main():
     """
     """
-
-    #abrindo o dataframe com todos os dados
     dataframe = pd.read_csv("main/assets/database/players.csv")
-    dataframe = dataframe.sort_values("OVERALLATTRIBUTE", ascending=False).reset_index(drop=True)
     
-    #título da página
-    st.title("NBA Ultimate Team")
+    st.markdown("<h1 style='text-align: center;'>NBA Ultimate Team</h1>", unsafe_allow_html=True)
+    st.markdown("---")
 
-    #barra de pesquisa
+    st.markdown("<h2 style='text-align: center;'>Busque um Jogador</h2>", unsafe_allow_html=True)
     option = st.selectbox(label="",
                           options=list(dataframe["FULL_NAME"]),
                           index=None,
                           placeholder="busque um jogador")
-    
+    st.markdown("---")
 
-    #subtítulo da página
-    st.header("TOP PLAYERS")
+    if option == None:
+        st.markdown("<h2 style='text-align: center;'>Melhores Jogadores</h2>", unsafe_allow_html=True)
+        dataframe = dataframe.sort_values("OVERALLATTRIBUTE", ascending=False).reset_index(drop=True)
+        rakingCreator(dataframe)
+        st.markdown("---")
 
-    #top 100 jogadores
-    col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12 = st.columns(12)
-    imagens_urls = list(dataframe["NBA_ID"])
-    with col1:
-        for i in range(0, 36, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col2:
-        for i in range(1, 37, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col3:
-        for i in range(2, 38, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col4:
-        for i in range(3, 39, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col5:
-        for i in range(4, 40, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col6:
-        for i in range(5, 41, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col7:
-        for i in range(6, 42, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col8:
-        for i in range(7, 43, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col9:
-        for i in range(8, 44, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col10:
-        for i in range(9, 45, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col11:
-        for i in range(10, 46, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
-    with col12:
-        for i in range(11, 47, 12):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+        st.markdown("<h2 style='text-align: center;'>Gerador de Rankings</h2>", unsafe_allow_html=True)
+        option = st.selectbox(label="",
+                          options=list(DICT_ATRIBUTOS.keys()),
+                          index=None,
+                          placeholder="busque um atributo")
+        st.markdown("---")
+        
+        if option != None:
+            st.markdown(f"<h2 style='text-align: center;'>{option}</h2>", unsafe_allow_html=True)
+            dataframe = dataframe.sort_values(DICT_ATRIBUTOS[option], ascending=False).reset_index(drop=True)
+            rakingCreator(dataframe)
+            st.markdown("---")
 
+
+    else:
+        dataframe = dataframe[dataframe['FULL_NAME'] == str(option)].reset_index(drop=True)
+        row_list = dataframe.loc[0, :].values.flatten().tolist()
+
+        st.markdown(f"<h2 style='text-align: center;'>{option}</h2>", unsafe_allow_html=True)
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(f"main/assets/images/full_cards/full_{row_list[1]}.png", width=300)
+        with col2:
+            st.markdown("", unsafe_allow_html=True)
+            st.markdown("", unsafe_allow_html=True)
+            st.markdown("", unsafe_allow_html=True)
+            st.markdown(f"<h5>NBA ID: {row_list[1]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>EQUIPE: {row_list[-11]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>DATA DE NASC.: {row_list[-4]}/{row_list[-5]}/{row_list[-6]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>IDADE: {row_list[-7]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>POSITION: {row_list[-9]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>NACIONALIDADE: {row_list[-8]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>Nº DE CAMISA: {row_list[-10]}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h5>EXPERIÊNCIA: {row_list[-3]} anos</h5>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
