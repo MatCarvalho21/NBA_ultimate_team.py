@@ -6,8 +6,10 @@ def main():
     """
     """
     dataframe = pd.read_csv("main/assets/database/players.csv")
+
+    st.set_page_config(initial_sidebar_state="collapsed")
     
-    st.markdown("<h1 style='text-align: center;'>NBA Ultimate Team</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🏀 NBA Ultimate Team</h1>", unsafe_allow_html=True)
     st.markdown("---")
 
     st.markdown("<h2 style='text-align: center;'>Player Selector</h2>", unsafe_allow_html=True)
@@ -185,7 +187,6 @@ def main():
                     st.markdown(f"<p>Stamina</p>", unsafe_allow_html=True)
                     st.markdown(f"<p>Hustle</p>", unsafe_allow_html=True)
                     st.markdown(f"<p>Overall Durability</p>", unsafe_allow_html=True)
-
 
         tab1.markdown("---")
 

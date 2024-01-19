@@ -3,6 +3,8 @@
 import pandas as pd  
 import streamlit as st
 
+lista_zeros = [0] * 50
+
 DICT_ATRIBUTOS = {
     "Close Shot": "CLOSESHOT",
     "Mid-Range Shot": "MIDRANGESHOT",
@@ -97,3 +99,31 @@ def colorAttribute(attribute:int) -> None:
         st.markdown(f"<p style='color: orange'>{attribute}</p>", unsafe_allow_html=True)
     else:
         st.markdown(f"<p style='color: red'>{attribute}</p>", unsafe_allow_html=True)
+
+def columnOfData(list_1=lista_zeros, col1=None, list_2 = lista_zeros, col2=None, list_3=lista_zeros, col3=None, col4=None, begin_index:int=8, end_index:int=44):
+    """
+    """
+
+    if list_1 != lista_zeros:
+        with col1:
+            for i in range(begin_index, end_index):
+                with st.container(border=True):
+                    st.markdown(f"<p style='text-align: center;'>{list_1[i]}</p>", unsafe_allow_html=True)
+
+    if list_2 != lista_zeros:
+        with col2:
+            for i in range(begin_index, end_index):
+                with st.container(border=True):
+                    st.markdown(f"<p style='text-align: center;'>{list_2[i]}</p>", unsafe_allow_html=True)
+
+    if list_3 != lista_zeros:
+        with col3:
+            for i in range(begin_index, end_index):
+                with st.container(border=True):
+                    st.markdown(f"<p style='text-align: center;'>{list_3[i]}</p>", unsafe_allow_html=True)
+
+    with col4:
+        for i in range(begin_index, end_index):
+            with st.container(border=True):
+                 st.markdown(f"<p style='text-align: center;'>{list(DICT_ATRIBUTOS.keys())[i-8]}</p>", unsafe_allow_html=True)
+
