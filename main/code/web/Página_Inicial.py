@@ -33,7 +33,7 @@ def main():
         if option != None:
             st.markdown(f"<h2 style='text-align: center;'>{option}</h2>", unsafe_allow_html=True)
             dataframe = dataframe.sort_values(DICT_ATRIBUTOS[option], ascending=False).reset_index(drop=True)
-            rakingCreator(dataframe)
+            rakingCreator(dataframe, DICT_ATRIBUTOS[option])
             st.markdown("---")
 
 

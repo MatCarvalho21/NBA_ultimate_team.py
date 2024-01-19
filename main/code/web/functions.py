@@ -42,27 +42,42 @@ DICT_ATRIBUTOS = {
     "Defensive Rebound": "DEFENSIVEREBOUND"
 }
 
-def rakingCreator(dataframe:pd.DataFrame) -> None:
+def rakingCreator(dataframe:pd.DataFrame, attribute:str="OVERALLATTRIBUTE") -> None:
     """
     """
-
+    list_of_attribute = list(dataframe[attribute])
     col1, col2, col3, col4, col5 = st.columns(5)
     imagens_urls = list(dataframe["NBA_ID"])
     with col1:
         for i in range(0, 15, 5):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+            with st.container(border=True):
+                st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+                with st.container(border=True):
+                    st.markdown(f"<h5 style='text-align: center;'>{list_of_attribute[i]}</h5>", unsafe_allow_html=True)
     with col2:
         for i in range(1, 15, 5):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+            with st.container(border=True):
+                st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+                with st.container(border=True):
+                    st.markdown(f"<h5 style='text-align: center;'>{list_of_attribute[i]}</h5>", unsafe_allow_html=True)
     with col3:
         for i in range(2, 15, 5):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+            with st.container(border=True):
+                st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+                with st.container(border=True):
+                    st.markdown(f"<h5 style='text-align: center;'>{list_of_attribute[i]}</h5>", unsafe_allow_html=True)
     with col4:
         for i in range(3, 15, 5):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+            with st.container(border=True):
+                st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+                with st.container(border=True):
+                    st.markdown(f"<h5 style='text-align: center;'>{list_of_attribute[i]}</h5>", unsafe_allow_html=True)
     with col5:
         for i in range(4, 15, 5):
-            st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+            with st.container(border=True):
+                st.image(f"main/assets/images/full_cards/full_{imagens_urls[i]}.png")
+                with st.container(border=True):
+                    st.markdown(f"<h5 style='text-align: center;'>{list_of_attribute[i]}</h5>", unsafe_allow_html=True)
 
 
 def colorAttribute(attribute:int) -> None:
