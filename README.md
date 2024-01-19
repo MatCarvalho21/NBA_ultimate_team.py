@@ -24,6 +24,34 @@ Segue abaixo um exemplo das diferentes versões de cartas, que foram a ideia ini
 - **Bronze Raro (Bronze Brilhante):** jogadores com overall maior ou igual a 68;
 - **Bronze Comum (Bronze Fosco):** com o restante dos jogadores de overall baixo.
 
-![Exemplo de cartas](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/example_full_cards.png?token=GHSAT0AAAAAACM43EKP7SVHCIQ5BSRXK2LWZNIQUGQ "Exemplo de cartas.")
+<div style="text-align:center">
+    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/example_full_cards.png?token=GHSAT0AAAAAACM43EKOJTGTTTLBX4PEXMNQZNKRFXQ" alt="Exemplo de cartas" />
+</div>
 
 ### Web Site
+Além das cartas, também foi desenvolvido uma página web com algumas funcionalidades interessantes. A página foi desenvolvida inteiramente em `python`, utilizando a biblioteca `stremalit`. Segue abaixo, algumas das utilidades que foram disponibilizadas. 
+##### Página Inicial
+Ao acessar o site, o usuário encontra uma barra de pesquisa, onde ele pode pesquisar por qualquer jogador da liga e acessar suas estatísticas. Além disso, de forma fixa, é mostrado um ranking com os 15 melhores jogadores do jogo e, para finalizar, existe uma outra barra de pesquisa mais abaixo. Nela, o usuário pode selecionar um atributo, por exemplo "Three-Point Shot", e será gerado um ranking com os 15 melhores jogadores do jogo no quesito "Three-Point Shot".
+
+<div style="text-align:center">
+    <img src="C:/Users/mathe/Projetos/NBA_ultimate_team/main/assets/images/page/screenshots/home.png" alt="Página Inicial" />
+</div>
+
+<div style="text-align:center">
+    <img src="C:/Users/mathe/Projetos/NBA_ultimate_team/main/assets/images/page/screenshots/ranking.png" alt="Ranking Generator" />
+</div>
+
+##### Página dos Jogadores
+Ao selecionar um jogador na página inicial, o usuário é direcionado para a página particular do respectivo atleta. Nessa página, são exibidas informações pessoais do jogador, assim como seus atributos dentro do jogo e um gráfico com uma visão geral da sua carta no jogo. 
+
+<div style="text-align:center">
+    <img src="C:/Users/mathe/Projetos/NBA_ultimate_team/main/assets/images/page/screenshots/player_page.png" alt="Jogador" />
+</div>
+
+
+##### Página de Comparações
+Acessando o menu, que fica no lado esquerdo da página, é possível navegar para outras seções do site, que possuem funcionalidades distintas. Uma delas é a página de comparações, onde o usuário pode selecionar até três jogadores e comparar seus atributos um a um para verificar os pontos fortes de cada um.
+
+<div style="text-align:center">
+    <img src="C:/Users/mathe/Projetos/NBA_ultimate_team/main/assets/images/page/screenshots/comparacao.png" alt="Jogador" />
+</div>
