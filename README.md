@@ -34,18 +34,18 @@ Além das cartas, também foi desenvolvido uma página web com algumas funcional
 Ao acessar o site, o usuário encontra uma barra de pesquisa, onde ele pode pesquisar por qualquer jogador da liga e acessar suas estatísticas. Além disso, de forma fixa, é mostrado um ranking com os 15 melhores jogadores do jogo e, para finalizar, existe uma outra barra de pesquisa mais abaixo. Nela, o usuário pode selecionar um atributo, por exemplo "Three-Point Shot", e será gerado um ranking com os 15 melhores jogadores do jogo no quesito "Three-Point Shot".
 
 <div style="text-align:center">
-    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/home.png?token=GHSAT0AAAAAACM43EKPWBQOVP47DTQH4QZMZNKRVHQ" alt="Página Inicial" />
+    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/home.png?token=GHSAT0AAAAAACM43EKOFSDXKE5PGNQYPF7EZNLFMBQ" alt="Página Inicial" />
 </div>
 
 <div style="text-align:center">
-    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/ranking.png?token=GHSAT0AAAAAACM43EKPAEJGFNU2K5PPWODYZNKRVLA" alt="Ranking Generator" />
+    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/ranking.png?token=GHSAT0AAAAAACM43EKPIAWCZ5N7JW3Z7NMIZNLFMDA" alt="Ranking Generator" />
 </div>
 
 ##### Página dos Jogadores
 Ao selecionar um jogador na página inicial, o usuário é direcionado para a página particular do respectivo atleta. Nessa página, são exibidas informações pessoais do jogador, assim como seus atributos dentro do jogo e um gráfico com uma visão geral da sua carta no jogo. 
 
 <div style="text-align:center">
-    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/player_page.png?token=GHSAT0AAAAAACM43EKPTRK7IEE5MTT3RTU6ZNKRVJA" alt="Jogador" />
+    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/player_page.png?token=GHSAT0AAAAAACM43EKOFMKL6UIJWJPMW5HSZNLFMEA" alt="Jogador" />
 </div>
 
 
@@ -53,5 +53,5 @@ Ao selecionar um jogador na página inicial, o usuário é direcionado para a p�
 Acessando o menu, que fica no lado esquerdo da página, é possível navegar para outras seções do site, que possuem funcionalidades distintas. Uma delas é a página de comparações, onde o usuário pode selecionar até três jogadores e comparar seus atributos um a um para verificar os pontos fortes de cada um.
 
 <div style="text-align:center">
-    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/comparacao.png?token=GHSAT0AAAAAACM43EKOOHBV4RJP6V4PSTA4ZNKRVGA" alt="Jogador" />
+    <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/comparacao.png?token=GHSAT0AAAAAACM43EKOS4KVJ5T3RQVCVBEOZNLFMFQ" alt="Jogador" />
 </div>
