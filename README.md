@@ -11,7 +11,6 @@ No entanto, o objetivo não é puramente estético. Pretendo criar uma página o
 
 O design das cartas foi totalmente elaborado utilizando a linguagem Python, que foi aquela com a qual tive maior contato no meu primeiro ano de faculdade. O restante do projeto será desenvolvido com ferramentas web, como HTML, CSS e JavaScript.
 
-## Repositório
 ## Projetos
 ### Cartas
 Segue abaixo um exemplo das diferentes versões de cartas, que foram a ideia inicial do projeto. As possibilidades de uso são diversas, desde jogos com dinâmica de cartas (que não foi completamente descartado por mim), até uma página web. É válido pontuar que elas são diferentes entre si, de acordo com o overall do jogador no NBA2K.
@@ -55,3 +54,51 @@ Acessando o menu, que fica no lado esquerdo da página, é possível navegar par
 <div style="text-align:center">
     <img src="https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/comparacao.png?token=GHSAT0AAAAAACM43EKOS4KVJ5T3RQVCVBEOZNLFMFQ" alt="Jogador" />
 </div>
+
+
+# NBA ULTIMATE TEAM (English)
+## Introduction and Objective
+
+My name is Matheus Carvalho, a third-semester student in the Data Science and Artificial Intelligence program at Fundação Getúlio Vargas (FGV/RJ).
+
+The initial idea of this project was inspired by a mode in the EAFC 24 game, the old FIFA, called "Ultimate Team." In this mode, the user has to build their team with cards of real players, taking into consideration not only each player's skill but also factors like the league, the team they play for, or their nationality to achieve the highest level of chemistry.
+
+The project utilizes the design of "Ultimate Team" cards and data extracted from various sources, from NBA2K to the league's official website, to create player cards.
+
+However, the goal is not purely aesthetic. I intend to create an online page where users can build lineups, analyze player data, compare them, and much more. It's worth noting that this type of website is quite popular for the FIFA community, of which I am a part, but not as much when it comes to NBA2K.
+
+The card designs were entirely created using the Python language, which I had the most exposure to in my first year of college. The rest of the project will be developed using web tools such as HTML, CSS, and JavaScript.
+
+## Projects
+### Cards
+Below is an example of the different card versions, which were the initial idea of the project. The possibilities for use are diverse, ranging from games with card dynamics (which has not been completely ruled out by me) to a web page. It's worth noting that they differ from each other, according to the player's overall rating in NBA2K.
+
+- **Inform (Black with Gold):** players with an overall rating of 90 or higher;
+- **Rare Gold (Shiny Gold):** players with an overall rating of 85 or higher;
+- **Common Gold (Matte Gold):** players with an overall rating of 80 or higher;
+- **Rare Silver (Shiny Silver):** players with an overall rating of 75 or higher;
+- **Common Silver (Matte Silver):** players with an overall rating of 70 or higher;
+- **Rare Bronze (Shiny Bronze):** players with an overall rating of 68 or higher;
+- **Common Bronze (Matte Bronze):** with the rest of the players with low overall ratings.
+
+![Example cards](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/example_full_cards.png?token=GHSAT0AAAAAACM43EKOJTGTTTLBX4PEXMNQZNKRFXQ)
+
+### Web Site
+In addition to the cards, a web page with some interesting features was also developed. The page was entirely developed in Python using the `streamlit` library. Below are some of the functionalities that were made available.
+
+#### Home Page
+Upon accessing the site, the user finds a search bar where they can search for any league player and access their statistics. In addition, a fixed ranking of the top 15 players.
+
+![Home Page](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/home.png?token=GHSAT0AAAAAACM43EKOFSDXKE5PGNQYPF7EZNLFMBQ)
+
+![Ranking Generator](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/ranking.png?token=GHSAT0AAAAAACM43EKPIAWCZ5N7JW3Z7NMIZNLFMDA)
+
+#### Players Page
+When selecting a player on the home page, the user is directed to the specific player's page. This page displays personal information about the player, as well as their in-game attributes and a chart with an overview of their in-game card.
+
+![Players Page](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/player_page.png?token=GHSAT0AAAAAACM43EKOFMKL6UIJWJPMW5HSZNLFMEA)
+
+#### Comparison Page
+Accessing the menu on the left side of the page allows navigation to other sections of the site with distinct functionalities. One of them is the comparison page, where the user can select up to three players and compare their attributes one by one to evaluate each one's strengths.
+
+![Comparison Page](https://raw.githubusercontent.com/MatCarvalho21/NBA_ultimate_team/main/main/assets/images/page/screenshots/comparacao.png?token=GHSAT0AAAAAACM43EKOS4KVJ5T3RQVCVBEOZNLFMFQ)
